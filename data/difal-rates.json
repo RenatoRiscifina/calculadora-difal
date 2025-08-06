@@ -1,1 +1,39 @@
-[]
+[[
+  {
+    "uf_origem": "SP",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 12.0,
+    "aliquota_interna_destino": 18.0
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 12.0,
+    "aliquota_interna_destino": 18.0
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 12.0,
+    "aliquota_interna_destino": 18.0
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 12.0,
+    "aliquota_interna_destino": 17.0
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 7.0,
+    "aliquota_interna_destino": 18.0
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 7.0,
+    "aliquota_interna_destino": 17.0
+  }
+]
+]
