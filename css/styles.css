@@ -75,6 +75,8 @@ button:hover {
 #mensagem-erro {
   margin-top: 10px;
   font-size: 0.95rem;
+  font-weight: bold;
+  color: #cc0000;
 }
 
 /* Responsividade */

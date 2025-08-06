@@ -1,39 +1,4214 @@
-[[
+[
   {
-    "uf_origem": "SP",
-    "uf_destino": "RJ",
-    "aliquota_interestadual": 12.0,
-    "aliquota_interna_destino": 18.0
+    "uf_origem": "AC",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
   },
   {
-    "uf_origem": "RJ",
-    "uf_destino": "MG",
-    "aliquota_interestadual": 12.0,
-    "aliquota_interna_destino": 18.0
+    "uf_origem": "AC",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
   },
   {
-    "uf_origem": "MG",
-    "uf_destino": "SP",
-    "aliquota_interestadual": 12.0,
-    "aliquota_interna_destino": 18.0
+    "uf_origem": "AC",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
   },
   {
-    "uf_origem": "RS",
-    "uf_destino": "SC",
-    "aliquota_interestadual": 12.0,
-    "aliquota_interna_destino": 17.0
-  },
-  {
-    "uf_origem": "SP",
+    "uf_origem": "AC",
     "uf_destino": "BA",
-    "aliquota_interestadual": 7.0,
-    "aliquota_interna_destino": 18.0
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "AC",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "AL",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "AM",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "AP",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "BA",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "CE",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
   },
   {
     "uf_origem": "DF",
     "uf_destino": "PE",
-    "aliquota_interestadual": 7.0,
-    "aliquota_interna_destino": 17.0
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "DF",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "ES",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "GO",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "MA",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "MT",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "MS",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "PA",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "PB",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "PR",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "PE",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "PI",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "RN",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "RS",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "RJ",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "RO",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "RR",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "SC",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.22
+  },
+  {
+    "uf_origem": "SP",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.12,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "SE",
+    "uf_destino": "TO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "AC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "AL",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "AM",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "AP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "BA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "CE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "DF",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "ES",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "GO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "MA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "MT",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "MS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "MG",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "PA",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "PB",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "PR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.19
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "PE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "PI",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.21
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "RN",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "RS",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "RJ",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "RO",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "RR",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.2
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "SC",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.17
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "SP",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.18
+  },
+  {
+    "uf_origem": "TO",
+    "uf_destino": "SE",
+    "aliquota_interestadual": 0.07,
+    "aliquota_interna_destino": 0.22
   }
-]
 ]
