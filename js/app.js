@@ -78,8 +78,8 @@ document.getElementById('difal-form').addEventListener('submit', function (e) {
   const aliquotaInterna = aliquota_interna_destino;
 const aliquotaImportados = aliquota_inter_importados;
 
-const numerador = baseCalculo * aliquotaImportados;
-const denominador = 1 - aliquotaInterna;
+const numerador = baseCalculo- (baseCalculo * aliquotaImportados);
+const denominador = (1 - aliquotaInterna)*aliquotaInterna-(baseCalculo*aliquotaImportados);
 
 const icmsDestino = ((baseCalculo - (numerador / denominador)) * aliquotaInterna);
 const icmsOrigem = baseCalculo * aliquotaImportados;
