@@ -47,12 +47,12 @@ destinoSelect.addEventListener('change', () => erroMsg.textContent = '');
 document.getElementById('difal-form').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const origem = origemSelect.value;
+  const origem = 'MG'; // fixo
   const destino = destinoSelect.value;
   const Valor_Equipamento = parseFloat(document.getElementById('base-calculo').value);
 
-  if (!origem || !destino || isNaN(Valor_Equipamento) || Valor_Equipamento <= 0) {
-    erroMsg.textContent = 'Preencha todos os campos corretamente. O valor da base de cálculo deve ser maior que zero.';
+  if (!destino || isNaN(Valor_Equipamento) || Valor_Equipamento <= 0) {
+    erroMsg.textContent = 'Selecione um estado de destino e insira um valor válido para o equipamento.';
     resultadoDiv.textContent = '';
     return;
   }
@@ -60,41 +60,29 @@ document.getElementById('difal-form').addEventListener('submit', function (e) {
   const dados = taxas.find(t => t.uf_origem === origem && t.uf_destino === destino);
 
   if (!dados) {
-    erroMsg.textContent = 'Não foi possível encontrar alíquotas para o par de estados selecionado.';
+    erroMsg.textContent = 'Não foi possível encontrar alíquotas para esse par de estados.';
     resultadoDiv.textContent = '';
     return;
   }
 
-  const {
-    aliquota_interestadual,
-    aliquota_interna_destino,
-    aliquota_inter_importados,
-    valor_icms_minimo
-  } = dados;
+  const aliquotaInterna = dados.aliquota_interna_destino;
+  const aliquotaImportados = dados.aliquota_inter_importados;
 
-  // Se for o mesmo estado, a alíquota interestadual é zero
-  const aliqInter = origem === destino ? 0 : aliquota_interestadual;
+  // Novo cálculo com base na sua fórmula
+  const numerador = Valor_Equipamento - (Valor_Equipamento * aliquotaImportados);
+  const denominador = (1 - aliquotaInterna) * (aliquotaInterna - (Valor_Equipamento * aliquotaImportados));
 
-  const aliquotaInterna = aliquota_interna_destino;
-const aliquotaImportados = aliquota_inter_importados;
+  const difal = numerador / denominador;
+  const precoFinal = Valor_Equipamento + difal;
 
-const numerador = Valor_Equipamento - (Valor_Equipamento * aliquotaImportados);
-const denominador = (aliquotaInterna) * (aliquotaInterna - (Valor_Equipamento * aliquotaImportados));
-
-const icmsDestino = ((Valor_Equipamento - (numerador / denominador)) * aliquotaInterna);
-const icmsOrigem = Valor_Equipamento * aliquotaImportados;
-
-const difal = numerador / denominador;
-
-
-  // Exibe todos os dados relevantes
+  // Resultado
   resultadoDiv.innerHTML = `
-  <p><strong>DIFAL:</strong> R$ ${difal.toFixed(2).replace('.', ',')}</p>
-  <p><strong>ICMS Destino:</strong> R$ ${icmsDestino.toFixed(2).replace('.', ',')}</p>
-  <p><strong>ICMS Origem (Importados):</strong> R$ ${icmsOrigem.toFixed(2).replace('.', ',')}</p>
-  <p><strong>Alíquota Interna (destino):</strong> ${(aliquotaInterna * 100).toFixed(2)}%</p>
-  <p><strong>Alíquota p/ Importados (origem):</strong> ${(aliquotaImportados * 100).toFixed(2)}%</p>
-`;
+    <p><strong>DIFAL:</strong> R$ ${difal.toFixed(2).replace('.', ',')}</p>
+    <p><strong>Preço Final:</strong> R$ ${precoFinal.toFixed(2).replace('.', ',')}</p>
+    <p><strong>Destino:</strong> ${destino}</p>
+    <p><strong>Alíquota Interna:</strong> ${(aliquotaInterna * 100).toFixed(2)}%</p>
+    <p><strong>Alíquota de Importados:</strong> ${(aliquotaImportados * 100).toFixed(2)}%</p>
+  `;
 
   erroMsg.textContent = '';
 });
