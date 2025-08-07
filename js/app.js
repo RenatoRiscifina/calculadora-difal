@@ -49,9 +49,9 @@ document.getElementById('difal-form').addEventListener('submit', function (e) {
 
   const origem = origemSelect.value;
   const destino = destinoSelect.value;
-  const baseCalculo = parseFloat(document.getElementById('base-calculo').value);
+  const Valor_Equipamento = parseFloat(document.getElementById('base-calculo').value);
 
-  if (!origem || !destino || isNaN(baseCalculo) || baseCalculo <= 0) {
+  if (!origem || !destino || isNaN(Valor_Equipamento) || Valor_Equipamento <= 0) {
     erroMsg.textContent = 'Preencha todos os campos corretamente. O valor da base de cálculo deve ser maior que zero.';
     resultadoDiv.textContent = '';
     return;
@@ -78,13 +78,13 @@ document.getElementById('difal-form').addEventListener('submit', function (e) {
   const aliquotaInterna = aliquota_interna_destino;
 const aliquotaImportados = aliquota_inter_importados;
 
-const numerador = baseCalculo- (baseCalculo * aliquotaImportados);
-const denominador = (1 - aliquotaInterna)*aliquotaInterna-(baseCalculo*aliquotaImportados);
+const numerador = Valor_Equipamento - (Valor_Equipamento * aliquotaImportados);
+const denominador = (aliquotaInterna) * (aliquotaInterna - (Valor_Equipamento * aliquotaImportados));
 
-const icmsDestino = ((baseCalculo - (numerador / denominador)) * aliquotaInterna);
-const icmsOrigem = baseCalculo * aliquotaImportados;
+const icmsDestino = ((Valor_Equipamento - (numerador / denominador)) * aliquotaInterna);
+const icmsOrigem = Valor_Equipamento * aliquotaImportados;
 
-const difal = numerador/denominador;
+const difal = numerador / denominador;
 
 
   // Exibe todos os dados relevantes
