@@ -2,8 +2,8 @@
 /* Reset básico */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
 }
 
 /* Estilo geral */
