@@ -1,63 +1,115 @@
 let taxas = [];
+let precos = [];
 
-const destinoSelect = document.getElementById('estado-destino');
-const erroMsg = document.getElementById('mensagem-erro');
+const equipamentoSelect = document.getElementById('equipamento');
+const pagamentoSelect = document.getElementById('pagamento');
+const valorExibicao = document.getElementById('valor-equipamento');
+const destinoSelect = document.getElementById('destino');
+const erroMsg = document.getElementById('erro');
 const resultadoDiv = document.getElementById('resultado');
 
-// Carrega o JSON ao abrir a página
-fetch('data/difal-rates.json')  // Verifique se esse caminho está certo
-  .then(response => {
-    if (!response.ok) throw new Error('Falha ao carregar JSON');
-    return response.json();
-  })
-  .then(data => {
-    taxas = data;
-    const destinosMG = data
-      .filter(item => item.uf_origem === 'MG')
-      .map(item => item.uf_destino);
+// 1. Carregar os JSONs de alíquotas e preços
+Promise.all([
+  fetch('data/difal-rates.json').then(res => res.json()),
+  fetch('data/valores-equipamentos.json').then(res => res.json())
+])
+.then(([dadosAliquotas, dadosPrecos]) => {
+  taxas = dadosAliquotas;
+  precos = dadosPrecos;
 
-    const destinosUnicos = [...new Set(destinosMG)].sort();
-
-    destinosUnicos.forEach(uf => {
-      const opt = document.createElement('option');
-      opt.value = uf;
-      opt.textContent = uf;
-      destinoSelect.appendChild(opt);
-    });
-  })
-  .catch(error => {
-    console.error(error);
-    erroMsg.textContent = 'Erro ao carregar dados. Verifique o JSON.';
+  // Preencher dropdown de equipamentos
+  const equipamentosUnicos = [...new Set(precos.map(p => p.equipamento))].sort();
+  equipamentosUnicos.forEach(eq => {
+    const opt = document.createElement('option');
+    opt.value = eq;
+    opt.textContent = eq;
+    equipamentoSelect.appendChild(opt);
   });
 
+  // Preencher dropdown de destinos (MG origem fixa)
+  const destinosTG = [...new Set(
+    taxas.filter(t => t.uf_origem === 'MG').map(t => t.uf_destino)
+  )].sort();
+  destinosTG.forEach(uf => {
+    const opt = document.createElement('option');
+    opt.value = uf;
+    opt.textContent = uf;
+    destinoSelect.appendChild(opt);
+  });
+})
+.catch(err => {
+  console.error(err);
+  erroMsg.textContent = 'Erro ao carregar dados. Tente recarregar a página.';
+});
 
-// Limpar mensagens ao mudar seleção
-destinoSelect.addEventListener('change', () => erroMsg.textContent = '');
+// 2. Quando o equipamento muda, carregar as formas de pagamento
+equipamentoSelect.addEventListener('change', () => {
+  pagamentoSelect.innerHTML = '<option value="">Selecione a forma de pagamento</option>';
+  valorExibicao.textContent = '';
+  erroMsg.textContent = '';
 
-// Evento de envio do formulário
-document.getElementById('difal-form').addEventListener('submit', function (e) {
+  const eqSelecionado = equipamentoSelect.value;
+  if (!eqSelecionado) return;
+
+  const formas = precos
+    .filter(p => p.equipamento === eqSelecionado)
+    .map(p => p.forma_pagamento);
+
+  [...new Set(formas)].forEach(fp => {
+    const opt = document.createElement('option');
+    opt.value = fp;
+    opt.textContent = fp;
+    pagamentoSelect.appendChild(opt);
+  });
+});
+
+// 3. Quando a forma de pagamento muda, mostrar valor selecionado
+pagamentoSelect.addEventListener('change', () => {
+  valorExibicao.textContent = '';
+  erroMsg.textContent = '';
+
+  const eq = equipamentoSelect.value;
+  const fp = pagamentoSelect.value;
+  if (!eq || !fp) return;
+
+  const precoObj = precos.find(p => p.equipamento === eq && p.forma_pagamento === fp);
+  if (precoObj) {
+    valorExibicao.textContent = `Valor do equipamento: R$ ${precoObj.valor.toFixed(2).replace('.', ',')}`;
+  }
+});
+
+// 4. Ao submeter o formulário, calcular DIFAL e preço final
+document.getElementById('difal-form').addEventListener('submit', function(e) {
   e.preventDefault();
+  erroMsg.textContent = '';
+  resultadoDiv.textContent = '';
 
-  const origem = 'MG'; // Origem fixa
+  const eq = equipamentoSelect.value;
+  const fp = pagamentoSelect.value;
+  const origem = 'MG'; // origem fixa
   const destino = destinoSelect.value;
-  const Valor_Equipamento = parseFloat(document.getElementById('base-calculo').value);
 
-  if (!destino || isNaN(Valor_Equipamento) || Valor_Equipamento <= 0) {
-    erroMsg.textContent = 'Selecione um estado de destino e insira um valor válido para o equipamento.';
-    resultadoDiv.textContent = '';
+  if (!eq || !fp || !destino) {
+    erroMsg.textContent = 'Por favor selecione equipamento, forma de pagamento e destino.';
     return;
   }
 
-  const dados = taxas.find(t => t.uf_origem === origem && t.uf_destino === destino);
-
-  if (!dados) {
-    erroMsg.textContent = 'Não foi possível encontrar alíquotas para esse par de estados.';
-    resultadoDiv.textContent = '';
+  const precoObj = precos.find(p => p.equipamento === eq && p.forma_pagamento === fp);
+  if (!precoObj) {
+    erroMsg.textContent = 'Não foi possível encontrar o valor do equipamento.';
     return;
   }
 
-  const aliquotaInterna = dados.aliquota_interna_destino;
-  const aliquotaImportados = dados.aliquota_inter_importados;
+  const Valor_Equipamento = precoObj.valor;
+
+  const aliquotaData = taxas.find(t => t.uf_origem === origem && t.uf_destino === destino);
+  if (!aliquotaData) {
+    erroMsg.textContent = 'Não foi possível encontrar as alíquotas para esse destino.';
+    return;
+  }
+
+  const aliquotaInterna = aliquotaData.aliquota_interna_destino;
+  const aliquotaImportados = aliquotaData.aliquota_inter_importados;
 
   const difal = Valor_Equipamento * (aliquotaInterna - aliquotaImportados);
   const precoFinal = Valor_Equipamento + difal;
@@ -66,6 +118,4 @@ document.getElementById('difal-form').addEventListener('submit', function (e) {
     <p><strong>DIFAL:</strong> R$ ${difal.toFixed(2).replace('.', ',')}</p>
     <p><strong>Preço Final:</strong> R$ ${precoFinal.toFixed(2).replace('.', ',')}</p>
   `;
-
-  erroMsg.textContent = '';
 });

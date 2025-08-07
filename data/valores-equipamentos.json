@@ -1,0 +1,3427 @@
+[
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 5775
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 7410.04
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 9190.57
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 11206.46
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 13422.42
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 5544
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 7113.57
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 8822.8
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 10757.97
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Passo - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 12885.19
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 12400
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 15910.74
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 19733.87
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 24062.35
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 28820.42
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 11573
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 14849.45
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 18417.45
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 22457.08
+  },
+  {
+    "equipamento": "Plotter de Recorte 120 Motor Servo - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 26897.63
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 35000
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 44909.34
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 55700.45
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 67917.93
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 81347.97
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 33600
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 43112.96
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 53472.43
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 65201.22
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 78094.05
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 46375
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 59504.87
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 73803.09
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 89991.26
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 107786.06
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 44520
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57124.68
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 70850.97
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 86391.61
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 103474.62
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega - OPORTUNIDADE",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 42524
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega - OPORTUNIDADE",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 54563.49
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega - OPORTUNIDADE",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 67674.3
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega - OPORTUNIDADE",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 82518.11
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 180 - Eco - Pronta Entrega - OPORTUNIDADE",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 98835.13
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - Eco - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 19450
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 24956.76
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 30953.53
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 37742.97
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - Eco - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 45206.23
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 26625
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 34163.17
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 42372.12
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 51666.14
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 61882.56
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 25560
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 32796.65
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 40677.24
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 49599.5
+  },
+  {
+    "equipamento": "CNC 10060 + Ruida + Chiller 5000 + Exaustor - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 59407.26
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 12938
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 16600.92
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 20589.77
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 25105.88
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 30070.2
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 12420
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 15936.4
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 19765.7
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 24101.16
+  },
+  {
+    "equipamento": "CNC 6040 + Chiller 3000 - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 28866.91
+  },
+  {
+    "equipamento": "CNC 4040 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 6731
+  },
+  {
+    "equipamento": "CNC 4040 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 8636.78
+  },
+  {
+    "equipamento": "CNC 4040 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 10712.14
+  },
+  {
+    "equipamento": "CNC 4040 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 13061.82
+  },
+  {
+    "equipamento": "CNC 4040 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 15644.71
+  },
+  {
+    "equipamento": "CNC 4040 - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 6462
+  },
+  {
+    "equipamento": "CNC 4040 - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 8291.69
+  },
+  {
+    "equipamento": "CNC 4040 - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 10284.19
+  },
+  {
+    "equipamento": "CNC 4040 - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 12540.06
+  },
+  {
+    "equipamento": "CNC 4040 - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 15019.82
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 18515
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 23757.04
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 29465.54
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 35928.59
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 43033.08
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17774
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 22806.17
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 28286.13
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 34490.43
+  },
+  {
+    "equipamento": "Fiber Portátil 30W + Eixo Rotativo - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 41310.49
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 16432
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21084.43
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 26150.86
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 31886.97
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 38192.37
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 15774
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 20239.93
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 25103.25
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 30609.41
+  },
+  {
+    "equipamento": "Fiber Portátil 30W - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 36662.04
+  },
+  {
+    "equipamento": "Fiber Portátil 50W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 28419
+  },
+  {
+    "equipamento": "Fiber Portátil 50W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 36465.03
+  },
+  {
+    "equipamento": "Fiber Portátil 50W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 45227.02
+  },
+  {
+    "equipamento": "Fiber Portátil 50W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 55147.19
+  },
+  {
+    "equipamento": "Fiber Portátil 50W + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 66051.9
+  },
+  {
+    "equipamento": "Fiber Portátil 50W - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 26335
+  },
+  {
+    "equipamento": "Fiber Portátil 50W - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 33791.07
+  },
+  {
+    "equipamento": "Fiber Portátil 50W - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 41910.61
+  },
+  {
+    "equipamento": "Fiber Portátil 50W - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 51103.39
+  },
+  {
+    "equipamento": "Fiber Portátil 50W - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 61208.54
+  },
+  {
+    "equipamento": "Mini Fiber 20W - Sem eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 13865
+  },
+  {
+    "equipamento": "Mini Fiber 20W - Sem eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 17790.51
+  },
+  {
+    "equipamento": "Mini Fiber 20W - Sem eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 22065.33
+  },
+  {
+    "equipamento": "Mini Fiber 20W - Sem eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 26905.2
+  },
+  {
+    "equipamento": "Mini Fiber 20W - Sem eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 32225.42
+  },
+  {
+    "equipamento": "Fiber Desktop 30W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 25073
+  },
+  {
+    "equipamento": "Fiber Desktop 30W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 32171.62
+  },
+  {
+    "equipamento": "Fiber Desktop 30W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 39901.91
+  },
+  {
+    "equipamento": "Fiber Desktop 30W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 48654
+  },
+  {
+    "equipamento": "Fiber Desktop 30W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 58274.7
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 32480
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 41675.87
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 51690.01
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 63027.84
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 75490.92
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 31098
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 39902.45
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 49490.35
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 60345.58
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Computador + Eixo Rotativo - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 72278.17
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 43120
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 55328.3
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 68622.95
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 83674.89
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 100220.7
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 41285
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 52973.77
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 65702.65
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 80114.05
+  },
+  {
+    "equipamento": "Fiber Portátil UV 5W + Eixo Rotativo + Chiller - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 95955.74
+  },
+  {
+    "equipamento": "Fiber 3 em 1 - 1500W - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 44687
+  },
+  {
+    "equipamento": "Fiber 3 em 1 - 1500W - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57339.1
+  },
+  {
+    "equipamento": "Fiber 3 em 1 - 1500W - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 71117.03
+  },
+  {
+    "equipamento": "Fiber 3 em 1 - 1500W - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 86716.15
+  },
+  {
+    "equipamento": "Fiber 3 em 1 - 1500W - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 103863.43
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Esteira com CCD - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 44687
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Esteira com CCD - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57339.1
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Esteira com CCD - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 71117.03
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Esteira com CCD - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 86716.15
+  },
+  {
+    "equipamento": "Fiber Desktop 50W + Esteira com CCD - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 103863.43
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 42933
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 55088.22
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 68325.05
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 83311.55
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 99785.41
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 41106
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 52744.16
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 65417.93
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 79766.94
+  },
+  {
+    "equipamento": "DTF UV 30cm XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 95540.04
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 60853
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 78081.8
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 96843.68
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 118085.53
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 141435.57
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 58264
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 74759.86
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 92723.59
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 113061.78
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 2x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 135418.47
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 74667
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 95807.16
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 118828.44
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 144892.71
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 173543.77
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 71489
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 91729.18
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 113770.4
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 138725.05
+  },
+  {
+    "equipamento": "FlatBed 9060 UV 3x XP600 - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 166156.39
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 27431
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 35197.44
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 43654.97
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 53230.43
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 63756.22
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 26334
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 33789.71
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 41908.87
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 51101.22
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 61205.88
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 35000
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 44909.34
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 55700.45
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 67917.93
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 81347.97
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 33600
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 43112.96
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 53472.43
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 65201.22
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 78094.05
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 36750
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 47154.8
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 58485.47
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 71313.83
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 85415.37
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 35280
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 45268.61
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 56146.05
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 68461.28
+  },
+  {
+    "equipamento": "Plotter de Impressão i1600 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 81998.75
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 46375
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 59504.87
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 73803.09
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 89991.26
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 107786.06
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 44520
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57124.68
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 70850.97
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 86391.61
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 E1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 103474.62
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 49000
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 62873.07
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 77980.62
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 95085.11
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 113887.16
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 45733
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 58680.97
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 72781.09
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 88744.98
+  },
+  {
+    "equipamento": "Plotter de Impressão i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 106293.24
+  },
+  {
+    "equipamento": "Plotter de Impressão 2X i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 80000
+  },
+  {
+    "equipamento": "Plotter de Impressão 2X i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 102649.91
+  },
+  {
+    "equipamento": "Plotter de Impressão 2X i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 127315.3
+  },
+  {
+    "equipamento": "Plotter de Impressão 2X i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 155240.99
+  },
+  {
+    "equipamento": "Plotter de Impressão 2X i3200 A1 180 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 185938.22
+  },
+  {
+    "equipamento": "Plotter de Impressão 2x i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 74667
+  },
+  {
+    "equipamento": "Plotter de Impressão 2x i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 95807.16
+  },
+  {
+    "equipamento": "Plotter de Impressão 2x i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 118828.44
+  },
+  {
+    "equipamento": "Plotter de Impressão 2x i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 144892.71
+  },
+  {
+    "equipamento": "Plotter de Impressão 2x i3200 A1 180 - SUB - Pré Venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 173543.77
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - SUB - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 16975
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21781.03
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 27014.72
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 32940.2
+  },
+  {
+    "equipamento": "Plotter de Impressão XP600 60 - SUB - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39453.77
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 54133
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 69459.21
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 86149.2
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 105045.29
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 125816.76
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 54133
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 69459.21
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 86149.2
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 105045.29
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 125816.76
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600- Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 63467
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600- Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 81436.17
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600- Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 101004.3
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600- Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 123158.97
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600- Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 147512.42
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 63467
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 81436.17
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 101004.3
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 123158.97
+  },
+  {
+    "equipamento": "DTF Têxtil 60cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 147512.42
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 35467
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 45508.7
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 56443.94
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 68824.62
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 82434.05
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 33957
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 43571.18
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 54040.87
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 65894.45
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 2x XP - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 78924.46
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 58800
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 75447.69
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 93576.75
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 114102.13
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 136664.59
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 52920
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 67902.92
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 84219.07
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 102691.91
+  },
+  {
+    "equipamento": "DTF Têxtil UV 30cm 2x i1600 - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 122998.13
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 1x XP- Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 14944
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 1x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 19174.93
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 1x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 23782.35
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 1x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 28998.78
+  },
+  {
+    "equipamento": "DTF Têxtil 30cm 1x XP- Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 34732.93
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 41000
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 52608.08
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 65249.09
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 79561.01
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 95293.34
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 39255
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 50369.03
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 62472.03
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 76174.81
+  },
+  {
+    "equipamento": "Escavadeira 10HP - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 91237.56
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 45000
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57740.58
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 71614.86
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 87323.06
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 104590.25
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 43085
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 55283.39
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 68567.25
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 83606.98
+  },
+  {
+    "equipamento": "Escavadeira 10HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 100139.35
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 89200
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 114454.66
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 141956.56
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 173093.7
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 207321.11
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 85404
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 109583.85
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 135915.3
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 165727.28
+  },
+  {
+    "equipamento": "Escavadeira 10HP - SB / Kubota - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 198498.01
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 65000
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 83403.06
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 103443.68
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 126133.3
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 151074.8
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 62234
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 79853.86
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 99041.61
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 120765.61
+  },
+  {
+    "equipamento": "Escavadeira 20HP - com SwingBoom - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 144645.66
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 20250
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 25983.26
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 32226.69
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 39295.38
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 47065.61
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 19330
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 24802.79
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 30762.56
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 37510.1
+  },
+  {
+    "equipamento": "Artic Banc 28L - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 44927.32
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 24279
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 31152.9
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 38638.46
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 47113.46
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 56429.59
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 23200
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 29768.48
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 36921.44
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 45019.89
+  },
+  {
+    "equipamento": "Artic Vert 38L - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 53922.08
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 22500
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 28870.29
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 35807.43
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 43661.53
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 52295.12
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 21477
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 27557.79
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 34179.68
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 41676.85
+  },
+  {
+    "equipamento": "Artic Banc 30L Touch - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 49918.1
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 53182
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 68239.24
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 84636.33
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 103200.8
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 123607.74
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 50870
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 65272.51
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 80956.62
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 98713.86
+  },
+  {
+    "equipamento": "Artic Vert 72L - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 118233.46
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17100
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21941.42
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 27213.65
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 33182.76
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39744.29
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17100
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21941.42
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 27213.65
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 33182.76
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 28L - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39744.29
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 23391
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 30013.62
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 37225.55
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 45390.76
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 54366.34
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 23391
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 30013.62
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 37225.55
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 45390.76
+  },
+  {
+    "equipamento": "Vuze Cream Banc - 38L - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 54366.34
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 48591
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 62348.35
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 77329.87
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 94291.67
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 112936.88
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 48591
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 62348.35
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 77329.87
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 94291.67
+  },
+  {
+    "equipamento": "Vuze Cream Vert - 60L - 2 sistemas - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 112936.88
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 16875
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21652.72
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 26855.57
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 32746.15
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39221.34
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 15000
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 19246.86
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 23871.62
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 29107.69
+  },
+  {
+    "equipamento": "Máquina Suco de Laranja - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 34863.42
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 25650
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 32912.13
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 40820.47
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 49774.14
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 59616.44
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 22800
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 29255.23
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 36284.86
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 44243.68
+  },
+  {
+    "equipamento": "Forno de Pizza 38cm - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 52992.39
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 28575
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 36665.27
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 45475.43
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 55450.14
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 66414.81
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 23813
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 30554.89
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 37896.7
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 46208.95
+  },
+  {
+    "equipamento": "Forno de Pizza 45cm - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 55346.17
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 11985
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 16121.44
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 20625.96
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 25725.89
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 31331.97
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 11414
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 14645.51
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 18164.56
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 22148.77
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 26528.4
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 13898
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 17832.71
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 22117.56
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 26968.77
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 32301.45
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 13236
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 16983.5
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 21064.46
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 25684.86
+  },
+  {
+    "equipamento": "Máquina Vácuo 40x40 Vert - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 30763.81
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17978
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 23067.86
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 28610.64
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 34886.06
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 41784.3
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17121
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21968.44
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 27247.21
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 33223.75
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Mesa - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39793.43
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 36465
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 46789.11
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 58031.91
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 70760.78
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 84752.96
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 34729
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 44561.54
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 55269.02
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 67391.82
+  },
+  {
+    "equipamento": "Máquina Vácuo 60x60 Double - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 80717.77
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17799
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 22838.25
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 28325.92
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 34538.94
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 41368.6
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 16951
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21750.3
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 26976.67
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 32893.86
+  },
+  {
+    "equipamento": "Ultra Congelador - 3 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39398.32
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 24990
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 32065.27
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 39770.12
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 48493.4
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 58082.45
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 23800
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 30538.35
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 37876.3
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 46184.19
+  },
+  {
+    "equipamento": "Ultra Congelador - 5 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 55316.62
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 39321
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 50453.79
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 62577.21
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 76303.12
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 91391.29
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 37449
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 48051.64
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 59597.74
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 72670.01
+  },
+  {
+    "equipamento": "Ultra Congelador - 10 Bandejas - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 87039.67
+  },
+  {
+    "equipamento": "Lava Louça - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 25424
+  },
+  {
+    "equipamento": "Lava Louça - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 32622.07
+  },
+  {
+    "equipamento": "Lava Louça - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 40460.66
+  },
+  {
+    "equipamento": "Lava Louça - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 49335.35
+  },
+  {
+    "equipamento": "Lava Louça - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 59090.83
+  },
+  {
+    "equipamento": "Lava Louça - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 24213
+  },
+  {
+    "equipamento": "Lava Louça - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 31068.14
+  },
+  {
+    "equipamento": "Lava Louça - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 38533.27
+  },
+  {
+    "equipamento": "Lava Louça - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 46985.16
+  },
+  {
+    "equipamento": "Lava Louça - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 56275.86
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 1800
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 1162.97
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 469.26
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": -316.15
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": -1179.51
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 17027
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 21847.89
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 27097.77
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 33041.57
+  },
+  {
+    "equipamento": "Simulador Escada TopStep - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 39575.29
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 23400
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 30025.1
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 37239.73
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 45407.99
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 54386.93
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 22135
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 28401.95
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 35226.55
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 42953.24
+  },
+  {
+    "equipamento": "Simulador Escada TopStep K2 - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 51446.78
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 24000
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 30794.97
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 38194.59
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 46572.3
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 55781.47
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 22400
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 28741.98
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 35648.28
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 43467.48
+  },
+  {
+    "equipamento": "Esteira Ontrack - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 52062.7
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pronta Entrega",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 36855
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pronta Entrega",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 47289.53
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pronta Entrega",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 58652.57
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pronta Entrega",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 71517.58
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pronta Entrega",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 85659.41
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pré-venda",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 3510
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pré-venda",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 2267.79
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pré-venda",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 915.05
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pré-venda",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": -616.5
+  },
+  {
+    "equipamento": "Esteira Ontrack S - Pré-venda",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": -2300.05
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pronta Entrega (SYT)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 22761
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pronta Entrega (SYT)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 29205.25
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pronta Entrega (SYT)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 36222.94
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pronta Entrega (SYT)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 44168.24
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pronta Entrega (SYT)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 52902.08
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pré-venda (SYT)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 20160
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pré-venda (SYT)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 25867.78
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pré-venda (SYT)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 32083.46
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pré-venda (SYT)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 39120.73
+  },
+  {
+    "equipamento": "Esteira Ontrack X  - Pré-venda (SYT)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 46856.43
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pronta Entrega (KP)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 25613
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 32864.51
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 40761.29
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 49701.87
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 59529.78
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pré-venda (KP)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 22686
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 29109.02
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 36103.59
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 44022.7
+  },
+  {
+    "equipamento": "Esteira Ontrack K - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 52727.76
+  },
+  {
+    "equipamento": "BIKE Vertical - Pronta Entrega (KP)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 7742
+  },
+  {
+    "equipamento": "BIKE Vertical - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 9934.09
+  },
+  {
+    "equipamento": "BIKE Vertical - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 12321.23
+  },
+  {
+    "equipamento": "BIKE Vertical - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 15023.92
+  },
+  {
+    "equipamento": "BIKE Vertical - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 17994.83
+  },
+  {
+    "equipamento": "BIKE Vertical - Pré-venda (KP)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 6857
+  },
+  {
+    "equipamento": "BIKE Vertical - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 8798.52
+  },
+  {
+    "equipamento": "BIKE Vertical - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 10912.81
+  },
+  {
+    "equipamento": "BIKE Vertical - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 13306.56
+  },
+  {
+    "equipamento": "BIKE Vertical - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 15937.89
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pronta Entrega (KP)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 11935
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 15314.08
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 18993.85
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 23160.02
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pronta Entrega (KP)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 27739.66
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pré-venda (KP)",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 10571
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 13563.97
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 16823.27
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 20513.39
+  },
+  {
+    "equipamento": "BIKE Horizontal - Pré-venda (KP)",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 24569.74
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Face",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 36225
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Face",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 46481.16
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Face",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 57649.96
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Face",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 70295.06
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Face",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 84195.15
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full - Face e Corpo",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 44550
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full - Face e Corpo",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57163.17
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full - Face e Corpo",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 70898.71
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full - Face e Corpo",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 86449.83
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full - Face e Corpo",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 103544.35
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full Med",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 54000
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full Med",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 69288.69
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full Med",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 85937.83
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full Med",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 104787.67
+  },
+  {
+    "equipamento": "EZA - Sonora Hifu Kit Full Med",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 125508.3
+  },
+  {
+    "equipamento": "EZA - Emana - EMS Face",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 67500
+  },
+  {
+    "equipamento": "EZA - Emana - EMS Face",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 86610.87
+  },
+  {
+    "equipamento": "EZA - Emana - EMS Face",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 107422.29
+  },
+  {
+    "equipamento": "EZA - Emana - EMS Face",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 130984.58
+  },
+  {
+    "equipamento": "EZA - Emana - EMS Face",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 156885.37
+  },
+  {
+    "equipamento": "EZA - IzeFit - EMS",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 81000
+  },
+  {
+    "equipamento": "EZA - IzeFit - EMS",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 103933.04
+  },
+  {
+    "equipamento": "EZA - IzeFit - EMS",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 128906.74
+  },
+  {
+    "equipamento": "EZA - IzeFit - EMS",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 157181.5
+  },
+  {
+    "equipamento": "EZA - IzeFit - EMS",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 188262.45
+  },
+  {
+    "equipamento": "EZA - Raya - Laser Diodo",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 85500
+  },
+  {
+    "equipamento": "EZA - Raya - Laser Diodo",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 109707.1
+  },
+  {
+    "equipamento": "EZA - Raya - Laser Diodo",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 136068.23
+  },
+  {
+    "equipamento": "EZA - Raya - Laser Diodo",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 165913.81
+  },
+  {
+    "equipamento": "EZA - Raya - Laser Diodo",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 198721.47
+  },
+  {
+    "equipamento": "EZA - Podera - Laser Despigmentação",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 45000
+  },
+  {
+    "equipamento": "EZA - Podera - Laser Despigmentação",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57740.58
+  },
+  {
+    "equipamento": "EZA - Podera - Laser Despigmentação",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 71614.86
+  },
+  {
+    "equipamento": "EZA - Podera - Laser Despigmentação",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 87323.06
+  },
+  {
+    "equipamento": "EZA - Podera - Laser Despigmentação",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 104590.25
+  },
+  {
+    "equipamento": "Bioset - MaxiShape Criostation",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 35900
+  },
+  {
+    "equipamento": "Bioset - MaxiShape Criostation",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 46064.15
+  },
+  {
+    "equipamento": "Bioset - MaxiShape Criostation",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 57132.74
+  },
+  {
+    "equipamento": "Bioset - MaxiShape Criostation",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 69664.39
+  },
+  {
+    "equipamento": "Bioset - MaxiShape Criostation",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 83439.78
+  },
+  {
+    "equipamento": "Bioset - MaxiFlash G3 + Clusters de LED",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 38900
+  },
+  {
+    "equipamento": "Bioset - MaxiFlash G3 + Clusters de LED",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 49913.52
+  },
+  {
+    "equipamento": "Bioset - MaxiFlash G3 + Clusters de LED",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 61907.07
+  },
+  {
+    "equipamento": "Bioset - MaxiFlash G3 + Clusters de LED",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 75485.93
+  },
+  {
+    "equipamento": "Bioset - MaxiFlash G3 + Clusters de LED",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 90412.46
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 40900
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 52479.77
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 65089.95
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 79366.96
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 95060.91
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom + 2 Led",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 47900
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom + 2 Led",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 61461.64
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom + 2 Led",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 76230.04
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom + 2 Led",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 92950.54
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten (Placas 1 P, 2M e 1G) + Ultrassom + 2 Led",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 111330.51
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten SE - Duas placas M",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 24500
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten SE - Duas placas M",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 31436.54
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten SE - Duas placas M",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 38990.31
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten SE - Duas placas M",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 47542.55
+  },
+  {
+    "equipamento": "Bioset - KryoPlatten SE - Duas placas M",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 56943.58
+  },
+  {
+    "equipamento": "Bioset - Dermovac 2.1 + Cluster de Led",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 35500
+  },
+  {
+    "equipamento": "Bioset - Dermovac 2.1 + Cluster de Led",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 45550.9
+  },
+  {
+    "equipamento": "Bioset - Dermovac 2.1 + Cluster de Led",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 56496.17
+  },
+  {
+    "equipamento": "Bioset - Dermovac 2.1 + Cluster de Led",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 68888.19
+  },
+  {
+    "equipamento": "Bioset - Dermovac 2.1 + Cluster de Led",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 82510.08
+  },
+  {
+    "equipamento": "Bioset - OmniLight",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 89000
+  },
+  {
+    "equipamento": "Bioset - OmniLight",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 114198.03
+  },
+  {
+    "equipamento": "Bioset - OmniLight",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 141638.28
+  },
+  {
+    "equipamento": "Bioset - OmniLight",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 172705.6
+  },
+  {
+    "equipamento": "Bioset - OmniLight",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 206856.27
+  },
+  {
+    "equipamento": "Bioset - Plasmaskin",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 3200
+  },
+  {
+    "equipamento": "Bioset - Plasmaskin",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 4106
+  },
+  {
+    "equipamento": "Bioset - Plasmaskin",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 5092.61
+  },
+  {
+    "equipamento": "Bioset - Plasmaskin",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 6209.64
+  },
+  {
+    "equipamento": "Bioset - Plasmaskin",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 7437.53
+  },
+  {
+    "equipamento": "Bioset - LedShape",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 4900
+  },
+  {
+    "equipamento": "Bioset - LedShape",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 6287.31
+  },
+  {
+    "equipamento": "Bioset - LedShape",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 7798.06
+  },
+  {
+    "equipamento": "Bioset - LedShape",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 9508.51
+  },
+  {
+    "equipamento": "Bioset - LedShape",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 11388.72
+  },
+  {
+    "equipamento": "KLD - Manthus",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 14500
+  },
+  {
+    "equipamento": "KLD - Manthus",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 18605.3
+  },
+  {
+    "equipamento": "KLD - Manthus",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 23075.9
+  },
+  {
+    "equipamento": "KLD - Manthus",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 28137.43
+  },
+  {
+    "equipamento": "KLD - Manthus",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 33701.3
+  },
+  {
+    "equipamento": "KLD - Hertix",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 6100
+  },
+  {
+    "equipamento": "KLD - Hertix",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 7827.06
+  },
+  {
+    "equipamento": "KLD - Hertix",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 9707.79
+  },
+  {
+    "equipamento": "KLD - Hertix",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 11837.13
+  },
+  {
+    "equipamento": "KLD - Hertix",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 14177.79
+  },
+  {
+    "equipamento": "HTM - Light Pulse + Aplicador",
+    "forma_pagamento": "Valor à Vista",
+    "valor": 42000
+  },
+  {
+    "equipamento": "HTM - Light Pulse + Aplicador",
+    "forma_pagamento": "Financiado (12x)",
+    "valor": 57740.58
+  },
+  {
+    "equipamento": "HTM - Light Pulse + Aplicador",
+    "forma_pagamento": "Financiado (24x)",
+    "valor": 71614.86
+  },
+  {
+    "equipamento": "HTM - Light Pulse + Aplicador",
+    "forma_pagamento": "Financiado (36x)",
+    "valor": 87323.06
+  },
+  {
+    "equipamento": "HTM - Light Pulse + Aplicador",
+    "forma_pagamento": "Financiado (48x)",
+    "valor": 104590.25
+  }
+]

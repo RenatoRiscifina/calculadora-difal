@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calculadora DIFAL Interestadual</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <title>Calculadora DIFAL</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Calculadora de DIFAL Interestadual</h1>
+  <div class="container">
+    <h1>Calculadora DIFAL</h1>
 
     <form id="difal-form">
-      <!-- Origem foi removida: sempre será MG -->
-
-      <label for="estado-destino">Estado de Destino:</label>
-      <select id="estado-destino" required>
-        <option value="">Selecione</option>
-        <!-- Opções adicionadas dinamicamente via JS -->
+      <label for="equipamento">Equipamento:</label>
+      <select id="equipamento" required>
+        <option value="">Selecione o equipamento</option>
       </select>
 
-      <label for="base-calculo">Valor do Equipamento (R$):</label>
-      <input
-        type="number"
-        id="base-calculo"
-        min="0.01"
-        step="0.01"
-        placeholder="Ex: 24000.00"
-        required
-        aria-describedby="mensagem-erro"
-      />
+      <label for="pagamento">Forma de Pagamento:</label>
+      <select id="pagamento" required>
+        <option value="">Selecione a forma de pagamento</option>
+        <option value="Valor à Vista">Valor à Vista</option>
+        <option value="Financiado (12x)">Financiado (12x)</option>
+        <option value="Financiado (24x)">Financiado (24x)</option>
+        <option value="Financiado (36x)">Financiado (36x)</option>
+        <option value="Financiado (48x)">Financiado (48x)</option>
+      </select>
 
-      <button type="submit" id="calcular-btn">Calcular</button>
+      <!-- Campo oculto manual -->
+      <input type="number" id="base-calculo" style="display:none;" />
+
+      <label for="destino">Estado de Destino:</label>
+      <select id="destino" required>
+        <option value="">Selecione o estado de destino</option>
+      </select>
+
+      <div id="valor-equipamento"></div>
+
+      <button type="submit">Calcular DIFAL</button>
     </form>
 
-    <div id="resultado"></div>
-    <div id="mensagem-erro" style="color: red;"></div>
-  </main>
+    <div id="erro" class="erro"></div>
+    <div id="resultado" class="resultado"></div>
+  </div>
 
-  <script src="js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
