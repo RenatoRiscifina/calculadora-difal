@@ -84,7 +84,7 @@ const denominador = (1 - aliquotaInterna)*aliquotaInterna-(baseCalculo*aliquotaI
 const icmsDestino = ((baseCalculo - (numerador / denominador)) * aliquotaInterna);
 const icmsOrigem = baseCalculo * aliquotaImportados;
 
-const difal = icmsDestino - icmsOrigem;
+const difal = numerador/denominador;
 
 
   // Exibe todos os dados relevantes
