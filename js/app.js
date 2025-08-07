@@ -5,25 +5,20 @@ const erroMsg = document.getElementById('mensagem-erro');
 const resultadoDiv = document.getElementById('resultado');
 
 // Carrega o JSON ao abrir a página
-fetch('data/difal-rates.json')
+fetch('data/difal-rates.json')  // Verifique se esse caminho está certo
   .then(response => {
-    if (!response.ok) {
-      throw new Error('Erro ao carregar o arquivo JSON');
-    }
+    if (!response.ok) throw new Error('Falha ao carregar JSON');
     return response.json();
   })
   .then(data => {
     taxas = data;
-
-    // Filtrar apenas os destinos possíveis a partir de MG
     const destinosMG = data
       .filter(item => item.uf_origem === 'MG')
       .map(item => item.uf_destino);
 
-    const ufsDestinoUnicas = [...new Set(destinosMG)].sort();
+    const destinosUnicos = [...new Set(destinosMG)].sort();
 
-    // Preencher o dropdown de destino
-    ufsDestinoUnicas.forEach(uf => {
+    destinosUnicos.forEach(uf => {
       const opt = document.createElement('option');
       opt.value = uf;
       opt.textContent = uf;
@@ -32,8 +27,9 @@ fetch('data/difal-rates.json')
   })
   .catch(error => {
     console.error(error);
-    erroMsg.textContent = 'Erro ao carregar dados. Tente recarregar a página.';
+    erroMsg.textContent = 'Erro ao carregar dados. Verifique o JSON.';
   });
+
 
 // Limpar mensagens ao mudar seleção
 destinoSelect.addEventListener('change', () => erroMsg.textContent = '');
