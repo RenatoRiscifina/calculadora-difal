@@ -11,8 +11,8 @@
  *  - Valor Total (Equipamento + DIFAL) (#valorTotal)
  *
  * Fontes de dados:
- *  - valores-equipamentos.json  -> [{ equipamento, forma_pagamento, valor }, ...]
- *  - difal-rates.json           -> [{ uf_origem, uf_destino, aliquota_interestadual, aliquota_interna_destino, aliquota_inter_importados, valor_icms_minimo }, ...]
+ *  - data/valores-equipamentos.json  -> [{ equipamento, forma_pagamento, valor }, ...]
+ *  - data/difal-rates.json           -> [{ uf_origem, uf_destino, aliquota_interestadual, aliquota_interna_destino, aliquota_inter_importados, valor_icms_minimo }, ...]
  *
  * Observações:
  *  - Origem SEMPRE MG (fixo)
@@ -22,10 +22,15 @@
 
 (function () {
   "use strict";
-// Caminhos dos dados (relativos ao index.html)
+
+  // =========================
+  // Config
+  // =========================
+  // Caminhos relativos ao index.html
   const EQUIP_URL = "data/valores-equipamentos.json";
   const RATES_URL = "data/difal-rates.json";
-  const ORIGEM_UF = "MG"; // fixo, conforme sua premissa
+  const ORIGEM_UF = "MG"; // fixo, conforme premissa
+
   // =========================
   // Utils
   // =========================
@@ -136,7 +141,7 @@
       const d = String(r.uf_destino || "").toUpperCase();
       if (!o || !d) continue;
 
-      // Indexa apenas se origem for MG (já que é fixa) — isso acelera busca
+      // Indexa apenas se origem for MG (já que é fixa) — isso acelera a busca
       if (o !== ORIGEM_UF) continue;
 
       ufsDestino.add(d);
