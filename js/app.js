@@ -26,8 +26,8 @@
   // =========================
   // Config
   // =========================
-  const EQUIP_URL = "valores-equipamentos.json";
-  const RATES_URL = "difal-rates.json";
+  const EQUIP_URL = "C:\Users\Renato Riscifina\Workspace-Blips\calculadora-difal\data\valores-equipamentos.json";
+  const RATES_URL = "C:\Users\Renato Riscifina\Workspace-Blips\calculadora-difal\data\difal-rates.json";
   const ORIGEM_UF = "MG"; // fixo, conforme sua premissa
 
   // =========================
