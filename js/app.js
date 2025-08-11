@@ -1,7 +1,7 @@
 /**
- * Calculadora DIFAL — app.js (versão integrada às bases JSON)
+ * Calculadora DIFAL — app.js (importados por padrão)
  *
- * Campos (na UI):
+ * Campos:
  *  - Equipamentos (#equipamento)
  *  - Forma de Pagamento (#formaPagamento)
  *  - UF Destino (#ufDestino)
@@ -10,14 +10,14 @@
  *  - Valor DIFAL (#valorDifal)
  *  - Valor Total (Equipamento + DIFAL) (#valorTotal)
  *
- * Fontes de dados:
- *  - data/valores-equipamentos.json  -> [{ equipamento, forma_pagamento, valor }, ...]
- *  - data/difal-rates.json           -> [{ uf_origem, uf_destino, aliquota_interestadual, aliquota_interna_destino, aliquota_inter_importados, valor_icms_minimo }, ...]
+ * Dados:
+ *  - data/valores-equipamentos.json
+ *  - data/difal-rates.json
  *
  * Observações:
- *  - Origem SEMPRE MG (fixo)
- *  - Cálculo: DIFAL = base * max(0, aliqInternaDestino - aliqInterestadual)
- *  - Formatação: BRL via Intl.NumberFormat
+ *  - Origem SEMPRE MG
+ *  - Para importados: usa aliquota_inter_importados, caindo para aliquota_interestadual se não houver
+ *  - DIFAL = base * max(0, aliqInternaDestino - aliqInterestadualAplicada)
  */
 
 (function () {
@@ -26,10 +26,9 @@
   // =========================
   // Config
   // =========================
-  // Caminhos relativos ao index.html
   const EQUIP_URL = "data/valores-equipamentos.json";
   const RATES_URL = "data/difal-rates.json";
-  const ORIGEM_UF = "MG"; // fixo, conforme premissa
+  const ORIGEM_UF = "MG"; // fixo
 
   // =========================
   // Utils
@@ -62,29 +61,21 @@
     if (n == null) return NaN;
     const s = String(n).trim();
     if (!s) return NaN;
-    // remove R$, pontos de milhar, troca vírgula por ponto
     const norm = s.replace(/R\$\s*/i, "").replace(/\./g, "").replace(",", ".");
     const v = Number(norm);
     return Number.isFinite(v) ? v : NaN;
   }
 
   // =========================
-  // Indexadores de dados
+  // Indexadores
   // =========================
-  /**
-   * Indexa lista de equipamentos:
-   * Entrada: [{ equipamento, forma_pagamento, valor }, ...]
-   * Saída: helpers para obter lista de equipamentos, formas e preço por combinação.
-   */
   function indexEquip(equipList) {
-    // Mapa: nomeEquip -> { formas:Set, precos: { [forma]: valorNumber } }
     const byEquip = new Map();
 
     for (const row of equipList) {
       const equip = row?.equipamento?.trim();
       const forma = row?.forma_pagamento?.trim();
       const valor = toNumberLike(row?.valor);
-
       if (!equip || !forma || !Number.isFinite(valor)) continue;
 
       if (!byEquip.has(equip)) byEquip.set(equip, { formas: new Set(), precos: {} });
@@ -95,7 +86,6 @@
 
     const equipamentos = Array.from(byEquip.keys()).sort((a, b) => a.localeCompare(b, "pt-BR"));
 
-    // Ordem sugerida para exibir as formas, mantendo desconhecidas no fim:
     const ordemFormas = [
       "Valor à Vista",
       "Financiado (12x)",
@@ -104,10 +94,7 @@
       "Financiado (48x)",
     ];
 
-    function getEquipamentos() {
-      return equipamentos;
-    }
-
+    function getEquipamentos() { return equipamentos; }
     function getFormas(equip) {
       const ref = byEquip.get(equip);
       if (!ref) return [];
@@ -118,7 +105,6 @@
       };
       return atuais.sort((a, b) => rank(a) - rank(b));
     }
-
     function getPreco(equip, forma) {
       const v = byEquip.get(equip)?.precos?.[forma];
       return Number.isFinite(v) ? v : NaN;
@@ -127,11 +113,6 @@
     return { getEquipamentos, getFormas, getPreco };
   }
 
-  /**
-   * Indexa lista de alíquotas:
-   * Entrada: [{ uf_origem, uf_destino, aliquota_interestadual, aliquota_interna_destino, aliquota_inter_importados, valor_icms_minimo }, ...]
-   * Saída: helpers para UFs e busca por par Origem|Destino.
-   */
   function indexRates(rateList) {
     const byPair = new Map();
     const ufsDestino = new Set();
@@ -140,23 +121,18 @@
       const o = String(r.uf_origem || "").toUpperCase();
       const d = String(r.uf_destino || "").toUpperCase();
       if (!o || !d) continue;
-
-      // Indexa apenas se origem for MG (já que é fixa) — isso acelera a busca
-      if (o !== ORIGEM_UF) continue;
+      if (o !== ORIGEM_UF) continue; // só indexa origem MG
 
       ufsDestino.add(d);
       byPair.set(`${o}|${d}`, {
         interna: pct(toNumberLike(r.aliquota_interna_destino)),
         interes: pct(toNumberLike(r.aliquota_interestadual)),
-        importados: pct(toNumberLike(r.aliquota_inter_importados)), // se precisar no futuro
+        importados: pct(toNumberLike(r.aliquota_inter_importados)), // pode ser NaN se não tiver
         icmsMin: toNumberLike(r.valor_icms_minimo) || 0,
       });
     }
 
-    function getUFsDestino() {
-      return Array.from(ufsDestino).sort();
-    }
-
+    function getUFsDestino() { return Array.from(ufsDestino).sort(); }
     function getAliquotas(origem, destino) {
       return byPair.get(`${String(origem).toUpperCase()}|${String(destino).toUpperCase()}`) || null;
     }
@@ -165,7 +141,7 @@
   }
 
   // =========================
-  // DOM refs
+  // DOM
   // =========================
   const selEquip = document.getElementById("equipamento");
   const selForma = document.getElementById("formaPagamento");
@@ -176,10 +152,7 @@
   const outTotal = document.getElementById("valorTotal");
   const erro = document.getElementById("erro");
 
-  function setErro(msg) {
-    erro.textContent = msg || "";
-  }
-
+  function setErro(msg) { erro.textContent = msg || ""; }
   function preencherSelect(select, items, placeholder) {
     setPlaceholder(select, placeholder);
     for (const it of items) {
@@ -189,11 +162,7 @@
       select.appendChild(opt);
     }
   }
-
-  function resetResultados() {
-    outDifal.textContent = "–";
-    outTotal.textContent = "–";
-  }
+  function resetResultados() { outDifal.textContent = "–"; outTotal.textContent = "–"; }
 
   // =========================
   // Boot
@@ -207,11 +176,9 @@
       Equip = indexEquip(equipRaw);
       Rates = indexRates(ratesRaw);
 
-      // Preenche selects iniciais
       preencherSelect(selEquip, Equip.getEquipamentos(), "Selecione o equipamento");
       preencherSelect(selUF, Rates.getUFsDestino(), "Selecione a UF de destino");
 
-      // Eventos
       selEquip.addEventListener("change", () => {
         const eq = selEquip.value;
         preencherSelect(selForma, Equip.getFormas(eq), "Selecione a forma de pagamento");
@@ -231,7 +198,7 @@
   }
 
   // =========================
-  // Cálculo
+  // Cálculo (importados)
   // =========================
   function calcular() {
     setErro("");
@@ -252,20 +219,16 @@
     }
 
     const a = Rates.getAliquotas(ORIGEM_UF, ufDestino);
-    if (!a) {
-      setErro("Alíquotas não encontradas para a UF selecionada.");
-      return;
-    }
+    if (!a) { setErro("Alíquotas não encontradas para a UF selecionada."); return; }
 
-    if (!Number.isFinite(a.interna) || !Number.isFinite(a.interes)) {
+    // aplica sempre a alíquota de importados quando disponível; senão, usa a interestadual padrão
+    const interesAplicada = Number.isFinite(a.importados) ? a.importados : a.interes;
+    if (!Number.isFinite(a.interna) || !Number.isFinite(interesAplicada)) {
       setErro("Valores de alíquotas inválidos para a UF selecionada.");
       return;
     }
 
-    // Regra padrão DIFAL
-    const difal = Math.max(0, a.interna - a.interes) * base;
-
-    // Arredonda 2 casas para evitar ruído de ponto flutuante
+    const difal = Math.max(0, a.interna - interesAplicada) * base;
     const difalRound = Math.round(difal * 100) / 100;
     const total = base + difalRound;
 
@@ -273,7 +236,7 @@
     outTotal.textContent = BRL.format(total);
   }
 
-  // Inicializa (assumindo que o script é carregado com defer; se não, podemos usar DOMContentLoaded)
+  // Inicializa
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
