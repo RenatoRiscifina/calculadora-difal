@@ -22,14 +22,10 @@
 
 (function () {
   "use strict";
-
-  // =========================
-  // Config
-  // =========================
-  const EQUIP_URL = "C:\Users\Renato Riscifina\Workspace-Blips\calculadora-difal\data\valores-equipamentos.json";
-  const RATES_URL = "C:\Users\Renato Riscifina\Workspace-Blips\calculadora-difal\data\difal-rates.json";
+// Caminhos dos dados (relativos ao index.html)
+  const EQUIP_URL = "data/valores-equipamentos.json";
+  const RATES_URL = "data/difal-rates.json";
   const ORIGEM_UF = "MG"; // fixo, conforme sua premissa
-
   // =========================
   // Utils
   // =========================
