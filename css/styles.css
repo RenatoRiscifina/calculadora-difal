@@ -1,91 +1,245 @@
-/* Estilos personalizados serão adicionados aqui */
-/* Reset básico */
-* {
-  box-sizing: border-box;
-  margin: auto;
-  padding: auto;
+/* ========== Reset e tokens ========== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root{
+  --bg: #0b0b0b;            /* preto de fundo */
+  --surface: #111111;        /* preto levemente elevado */
+  --surface-2: #161616;      
+  --text: #ffffff;           /* branco principal */
+  --text-dim: #e6e6e6;       /* branco suave */
+  --muted: #9ca3af;          /* cinza para detalhes */
+  --line: #212121;           /* divisórias */
+  --accent: #ffd60a;         /* amarelo principal */
+  --accent-2: #ffea7a;       /* amarelo claro (hover/foco/números) */
+  --danger: #ff6b6b;         /* mensagens de erro */
+  --radius: 14px;
+  --shadow: 0 8px 28px rgba(0,0,0,.35);
 }
 
-/* Estilo geral */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  padding: 20px;
-  color: #333;
+html, body{
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
+  line-height: 1.45;
 }
 
-/* Container principal */
-main {
-  max-width: 500px;
+/* ========== Header App (barra superior) ========== */
+.app-header{
+  position: sticky; /* permanece no topo ao rolar */
+  top: 0;
+  z-index: 100;
+  background: var(--accent);         /* amarelo principal */
+  color: #0b0b0b;                    /* texto preto */
+  box-shadow: 0 8px 22px rgba(0,0,0,.25);
+  border-bottom: 1px solid rgba(0,0,0,.25);
+}
+
+.app-header__inner{
+  max-width: 1080px;
   margin: 0 auto;
-  background-color: white;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Título */
-main h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Formulário */
-form {
+  padding: 12px 16px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
 
-label {
-  font-weight: bold;
+.app-header__logo{
+  display: block;
+  height: 48px;
+  width: auto;
+  filter: drop-shadow(0 1px 0 rgba(255,255,255,.25));
 }
 
-select,
-input[type="number"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.app-header__title{
+  display: grid;
+  line-height: 1.15;
 }
 
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 12px;
+.app-header__title strong{
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.app-header__title span{
+  font-size: .9rem;
+  color: #222; /* contraste suave sobre o amarelo */
+}
+
+/* Responsivo da header */
+@media (max-width: 520px){
+  .app-header__title span{ display:none; }
+  .app-header__logo{ height: 40px; }
+}
+
+/* ========== Layout principal ========== */
+.container{
+  max-width: 880px;
+  margin: 42px auto;
+  padding: 0 16px;
+}
+
+.card{
+  background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+h1{
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  margin-bottom: 18px;
+}
+
+h2{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* ========== Campos do formulário ========== */
+.field{
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+label{
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+select{
+  appearance: none;
+  background: #0e0e0e;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .06s ease;
+}
+
+select:hover{
+  border-color: var(--accent);
+}
+
+select:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 214, 10, .25);
+}
+
+/* ========== Botão ========== */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #111111;             /* texto preto no botão amarelo */
+  font-weight: 900;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform .06s ease, filter .15s ease, box-shadow .15s ease;
+  box-shadow: 0 6px 18px rgba(255, 214, 10, .25);
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn:hover{
+  filter: brightness(1.03);
 }
 
-/* Resultado e erro */
-#resultado {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: green;
+.btn:active{
+  transform: translateY(1px);
 }
 
-#mensagem-erro {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  color: #cc0000;
+.btn:disabled{
+  opacity: .6;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  main {
-    padding: 16px;
-  }
+/* Foco visível (acessibilidade) */
+:where(button, [role="button"], select, a, summary):focus-visible{
+  outline: 3px solid var(--accent-2);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
 
-  button {
-    padding: 10px;
-  }
+/* ========== Mensagens e resultados ========== */
+.error{
+  margin-top: 8px;
+  color: var(--danger);
+  font-weight: 700;
+  min-height: 1.25em; /* evita pulo de layout */
+}
+
+.result{
+  border: 1px solid var(--line);
+}
+
+.result .result-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px dashed var(--line);
+}
+
+.result .result-row:first-of-type{
+  border-top: none;
+}
+
+.result .result-row span{
+  color: var(--muted);
+}
+
+.result .result-row strong{
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--accent-2);      /* amarelo claro nos números */
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+/* ========== Detalhes / Observações ========== */
+.note{
+  color: var(--text-dim);
+  font-size: .96rem;
+}
+
+.note summary{
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--accent);
+  list-style: none;
+}
+
+.note summary::-webkit-details-marker{ display: none; }
+
+.note[open]{
+  border-color: rgba(255, 214, 10, .3);
+}
+
+/* ========== Estados sutis ========== */
+.card:hover{
+  border-color: rgba(255, 214, 10, .15);
+}
+
+/* ========== Utilidades responsivas ========== */
+@media (max-width: 520px){
+  h1{ font-size: 1.6rem; }
+  .btn{ width: 100%; }
+}
+
+/* ========== Respeito a usuários com movimento reduzido ========== */
+@media (prefers-reduced-motion: reduce){
+  * { transition: none !important; }
 }

@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculadora DIFAL</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Calculadora DIFAL</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora DIFAL · Blips</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header com logo -->
+    <header class="app-header">
+      <div class="app-header__inner">
+        <img
+          class="app-header__logo"
+          src="img/blips-logo.png"
+          alt="Blips"
+          width="140"
+          height="48"
+          decoding="async"
+          loading="eager"
+        />
+        <div class="app-header__title">
+          <strong>Calculadora DIFAL</strong>
+          <span>Origem MG · amarelo, preto e branco</span>
+        </div>
+      </div>
+    </header>
 
-    <form id="difal-form">
-      <label for="equipamento">Equipamento:</label>
-      <select id="equipamento" required>
-        <option value="">Selecione o equipamento</option>
-      </select>
+    <!-- Conteúdo -->
+    <main class="container">
+      <h1>Calculadora DIFAL</h1>
 
-      <label for="pagamento">Forma de Pagamento:</label>
-      <select id="pagamento" required>
-        <option value="">Selecione a forma de pagamento</option>
-        <option value="Valor à Vista">Valor à Vista</option>
-        <option value="Financiado (12x)">Financiado (12x)</option>
-        <option value="Financiado (24x)">Financiado (24x)</option>
-        <option value="Financiado (36x)">Financiado (36x)</option>
-        <option value="Financiado (48x)">Financiado (48x)</option>
-      </select>
+      <form id="form-difal" class="card" novalidate>
+        <div class="field">
+          <label for="equipamento">Equipamentos</label>
+          <select id="equipamento" required>
+            <option value="" disabled selected>Selecione o equipamento</option>
+          </select>
+        </div>
 
-      <!-- Campo oculto manual -->
-      <input type="number" id="base-calculo" style="display:none;" />
+        <div class="field">
+          <label for="formaPagamento">Forma de Pagamento</label>
+          <select id="formaPagamento" required>
+            <option value="" disabled selected>Selecione a forma de pagamento</option>
+          </select>
+        </div>
 
-      <label for="destino">Estado de Destino:</label>
-      <select id="destino" required>
-        <option value="">Selecione o estado de destino</option>
-      </select>
+        <div class="field">
+          <label for="ufDestino">UF Destino</label>
+          <select id="ufDestino" required>
+            <option value="" disabled selected>Selecione a UF de destino</option>
+          </select>
+        </div>
 
-      <div id="valor-equipamento"></div>
+        <button id="btnCalcular" type="submit" class="btn">Calcular DIFAL</button>
+        <div id="erro" class="error" aria-live="polite"></div>
+      </form>
 
-      <button type="submit">Calcular DIFAL</button>
-    </form>
+      <section id="resultado" class="result card" aria-live="polite">
+        <h2>Resultados</h2>
+        <div class="result-row">
+          <span>Valor DIFAL:</span>
+          <strong id="valorDifal">–</strong>
+        </div>
+        <div class="result-row">
+          <span>Valor total (Equipamento + DIFAL):</span>
+          <strong id="valorTotal">–</strong>
+        </div>
+      </section>
+    </main>
 
-    <div id="erro" class="erro"></div>
-    <div id="resultado" class="resultado"></div>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+    <!-- Script principal (origem fixa MG; busca JSONs no mesmo nível do index) -->
+    <script src="js/app.js" defer></script>
+  </body>
 </html>
