@@ -1,5 +1,5 @@
 /**
- * Calculadora DIFAL — app.js (por dentro, importados por padrão)
+ * Calculadora DIFAL — app.js (por dentro, importados por padrão + MG→MG = DIFAL 0 + nota)
  * Campos: Equipamentos, Forma de Pagamento, UF Destino
  * Resultados: Valor do Equipamento, Valor DIFAL, Valor Total
  * Dados: data/valores-equipamentos.json, data/difal-rates.json
@@ -86,6 +86,9 @@
         icmsMin: toNumberLike(r.valor_icms_minimo) || 0,
       });
     }
+    // Garante que MG apareça no select, mesmo que não exista a linha MG|MG no JSON
+    ufsDestino.add(ORIGEM_UF);
+
     function getUFsDestino() { return Array.from(ufsDestino).sort(); }
     function getAliquotas(origem, destino) {
       return byPair.get(`${String(origem).toUpperCase()}|${String(destino).toUpperCase()}`) || null;
@@ -103,8 +106,11 @@
   const outDifal = document.getElementById("valorDifal");
   const outTotal = document.getElementById("valorTotal");
   const erro = document.getElementById("erro");
+  const nota = document.getElementById("notaOperacao");
 
   function setErro(msg) { erro.textContent = msg || ""; }
+  function setNota(msg) { if (nota) nota.textContent = msg || ""; }
+
   function preencherSelect(select, items, placeholder) {
     setPlaceholder(select, placeholder);
     for (const it of items) {
@@ -113,7 +119,7 @@
       select.appendChild(opt);
     }
   }
-  function resetResultados() { outDifal.textContent = "–"; outTotal.textContent = "–"; }
+  function resetResultados() { outDifal.textContent = "–"; outTotal.textContent = "–"; setNota(""); }
 
   // === Boot ===
   let Equip = null, Rates = null;
@@ -130,7 +136,7 @@
       selEquip.addEventListener("change", () => {
         const eq = selEquip.value;
         preencherSelect(selForma, Equip.getFormas(eq), "Selecione a forma de pagamento");
-        outBase.textContent = "–";   // base só aparece quando a forma é escolhida
+        outBase.textContent = "–";
         resetResultados();
         setErro("");
       });
@@ -139,7 +145,7 @@
         const eq = selEquip.value, f = selForma.value;
         const base = Equip.getPreco(eq, f);
         outBase.textContent = Number.isFinite(base) ? BRL.format(base) : "–";
-        resetResultados(); // limpa DIFAL/Total até clicar calcular
+        resetResultados();
         setErro("");
       });
 
@@ -154,9 +160,10 @@
     }
   }
 
-  // === Cálculo (por dentro + importados) ===
+  // === Cálculo (por dentro + importados + MG→MG = 0) ===
   function calcular() {
     setErro("");
+    setNota("");
 
     const equip = selEquip.value;
     const forma = selForma.value;
@@ -166,7 +173,15 @@
 
     const preco = Equip.getPreco(equip, forma);
     if (!Number.isFinite(preco)) { setErro("Preço não encontrado para a combinação selecionada."); return; }
-    outBase.textContent = BRL.format(preco); // garante exibição da base
+    outBase.textContent = BRL.format(preco);
+
+    // Caso interno MG→MG: DIFAL não se aplica
+    if (String(ufDestino).toUpperCase() === ORIGEM_UF) {
+      setNota("Operação interna (MG→MG): DIFAL não se aplica.");
+      outDifal.textContent = BRL.format(0);
+      outTotal.textContent = BRL.format(preco);
+      return;
+    }
 
     const a = Rates.getAliquotas(ORIGEM_UF, ufDestino);
     if (!a) { setErro("Alíquotas não encontradas para a UF selecionada."); return; }
@@ -176,7 +191,7 @@
       setErro("Valores de alíquotas inválidos para a UF selecionada."); return;
     }
 
-    const denom = 1 - a.interna; // sem FCP
+    const denom = 1 - a.interna; // sem FCP; se houver, seria (1 - interna - fcp)
     if (denom <= 0) { setErro("Alíquota interna inválida (resultou em base negativa)."); return; }
 
     const icmsOrigem = preco * aliqInterAplicada;
