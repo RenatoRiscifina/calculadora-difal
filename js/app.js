@@ -1,23 +1,15 @@
 /**
- * Calculadora DIFAL — app.js (importados por padrão)
+ * Calculadora DIFAL — app.js (por dentro, importados por padrão)
  *
- * Campos:
- *  - Equipamentos (#equipamento)
- *  - Forma de Pagamento (#formaPagamento)
- *  - UF Destino (#ufDestino)
- *
- * Resultados:
- *  - Valor DIFAL (#valorDifal)
- *  - Valor Total (Equipamento + DIFAL) (#valorTotal)
- *
- * Dados:
- *  - data/valores-equipamentos.json
- *  - data/difal-rates.json
- *
- * Observações:
- *  - Origem SEMPRE MG
- *  - Para importados: usa aliquota_inter_importados, caindo para aliquota_interestadual se não houver
- *  - DIFAL = base * max(0, aliqInternaDestino - aliqInterestadualAplicada)
+ * Campos: Equipamentos (#equipamento), Forma de Pagamento (#formaPagamento), UF Destino (#ufDestino)
+ * Resultados: Valor DIFAL (#valorDifal), Valor Total (Equipamento + DIFAL) (#valorTotal)
+ * Dados: data/valores-equipamentos.json, data/difal-rates.json
+ * Premissas: Origem SEMPRE MG; Importados: usar aliquota_inter_importados quando disponível
+ * Fórmula por dentro:
+ *   ICMS_origem = Preço × ALQ_inter_aplicada
+ *   Base_destino = (Preço − ICMS_origem) / (1 − ALQ_interna)
+ *   ICMS_destino = Base_destino × ALQ_interna
+ *   DIFAL = ICMS_destino − ICMS_origem
  */
 
 (function () {
@@ -42,9 +34,7 @@
     return res.json();
   }
 
-  function clearChildren(el) {
-    while (el.firstChild) el.removeChild(el.firstChild);
-  }
+  function clearChildren(el) { while (el.firstChild) el.removeChild(el.firstChild); }
 
   function setPlaceholder(selectEl, texto) {
     clearChildren(selectEl);
@@ -71,7 +61,6 @@
   // =========================
   function indexEquip(equipList) {
     const byEquip = new Map();
-
     for (const row of equipList) {
       const equip = row?.equipamento?.trim();
       const forma = row?.forma_pagamento?.trim();
@@ -85,7 +74,6 @@
     }
 
     const equipamentos = Array.from(byEquip.keys()).sort((a, b) => a.localeCompare(b, "pt-BR"));
-
     const ordemFormas = [
       "Valor à Vista",
       "Financiado (12x)",
@@ -121,13 +109,13 @@
       const o = String(r.uf_origem || "").toUpperCase();
       const d = String(r.uf_destino || "").toUpperCase();
       if (!o || !d) continue;
-      if (o !== ORIGEM_UF) continue; // só indexa origem MG
+      if (o !== ORIGEM_UF) continue; // só indexamos origem MG
 
       ufsDestino.add(d);
       byPair.set(`${o}|${d}`, {
         interna: pct(toNumberLike(r.aliquota_interna_destino)),
         interes: pct(toNumberLike(r.aliquota_interestadual)),
-        importados: pct(toNumberLike(r.aliquota_inter_importados)), // pode ser NaN se não tiver
+        importados: pct(toNumberLike(r.aliquota_inter_importados)), // pode ser NaN se não houver
         icmsMin: toNumberLike(r.valor_icms_minimo) || 0,
       });
     }
@@ -198,7 +186,7 @@
   }
 
   // =========================
-  // Cálculo (importados)
+  // Cálculo (por dentro + importados)
   // =========================
   function calcular() {
     setErro("");
@@ -212,8 +200,8 @@
       return;
     }
 
-    const base = Equip.getPreco(equip, forma);
-    if (!Number.isFinite(base)) {
+    const preco = Equip.getPreco(equip, forma);
+    if (!Number.isFinite(preco)) {
       setErro("Preço não encontrado para a combinação selecionada.");
       return;
     }
@@ -221,16 +209,30 @@
     const a = Rates.getAliquotas(ORIGEM_UF, ufDestino);
     if (!a) { setErro("Alíquotas não encontradas para a UF selecionada."); return; }
 
-    // aplica sempre a alíquota de importados quando disponível; senão, usa a interestadual padrão
-    const interesAplicada = Number.isFinite(a.importados) ? a.importados : a.interes;
-    if (!Number.isFinite(a.interna) || !Number.isFinite(interesAplicada)) {
+    // Aplica SEMPRE a alíquota de importados quando disponível; senão, cai para a interestadual padrão
+    const aliqInterAplicada = Number.isFinite(a.importados) ? a.importados : a.interes;
+
+    if (!Number.isFinite(a.interna) || !Number.isFinite(aliqInterAplicada)) {
       setErro("Valores de alíquotas inválidos para a UF selecionada.");
       return;
     }
 
-    const difal = Math.max(0, a.interna - interesAplicada) * base;
+    const denom = 1 - a.interna; // sem FCP; se houver FCP, seria (1 - interna - fcp)
+    if (denom <= 0) {
+      setErro("Alíquota interna inválida (resultou em base negativa).");
+      return;
+    }
+
+    const icmsOrigem = preco * aliqInterAplicada;
+    const baseDestino = (preco - icmsOrigem) / denom;
+    const icmsDestino = baseDestino * a.interna;
+
+    let difal = icmsDestino - icmsOrigem;
+    if (difal < 0) difal = 0;
+
+    // Arredonda 2 casas
     const difalRound = Math.round(difal * 100) / 100;
-    const total = base + difalRound;
+    const total = preco + difalRound;
 
     outDifal.textContent = BRL.format(difalRound);
     outTotal.textContent = BRL.format(total);
