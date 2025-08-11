@@ -9,6 +9,7 @@ data/difal-rates.json: alíquotas por UF de destino (interna, interestadual e in
 Interface com paleta amarelo / preto / branco, alto contraste e foco em acessibilidade.
 
 ## Objetivo do projeto
+
 Entregar uma calculadora simples e confiável de DIFAL para produtos importados, que:
 
 carregue dados estáticos (preços e alíquotas) via JSON,
@@ -56,6 +57,7 @@ UI responsiva, com foco visível e contraste alto.
 Como os caminhos de fetch() são relativos ao index.html (data/...), não há configurações extras.
 
 ## Processo de construção (passo a passo)
+
 1. Definição do contrato de dados
 
 Preços separados por equipamento × forma de pagamento.
@@ -70,7 +72,7 @@ Alíquotas: mapeamos MG|UF → objeto com as alíquotas, e uma lista única de U
 
 3. UI e binding
 
-Preenchemos o <select> de equipamentos na carga.
+Preenchemos o select de equipamentos na carga.
 
 Ao escolher o equipamento, carregamos as formas de pagamento válidas.
 
@@ -102,6 +104,7 @@ Acessibilidade: aria-live nos resultados, foco visível, contraste alto.
 CSS com design tokens (variáveis CSS) e componentes simples (cards, botões, listas).
 
 ## Técnicas e tecnologias usadas
+
 1. Vanilla JS (sem framework):
 
 fetch com cache: "no-store" para evitar cache “duro” no Pages.
@@ -126,7 +129,7 @@ Dados (/data) separados do código (/js) e estilos (/css).
 
 app.js dividido em Config, Utils, Indexadores, Binding, Cálculo.
 
-##Detalhes do cálculo (exemplo)
+## Detalhes do cálculo (exemplo)
 Preço (após selecionar equipamento + forma): R$ 24.000,00
 
 Alíquota interna (destino): 18%
@@ -144,6 +147,7 @@ DIFAL = ICMS_destino − 960,00
 Total = Preço + DIFAL
 
 ## Decisões de design
+
 Dados fora do código: facilita atualização sem redeploy de JS/CSS.
 
 Indexação: performance e simplicidade (lookups O(1)).
@@ -155,6 +159,7 @@ Sem dependências: zero build; ideal para GitHub Pages e manutenção rápida.
 Tema consistente: tokens CSS e componentes reutilizáveis.
 
 ## Boas práticas adotadas
+
 Código segmentado por responsabilidade (utils, indexação, cálculo).
 
 Nomes autoexplicativos e comentários concisos.
@@ -166,6 +171,7 @@ Arredondamento apenas no fim do fluxo de cálculo.
 Caminhos relativos estáveis para publicar em qualquer domínio (Pages).
 
 ## Testes e validação (sugestão)
+
 Unitários dos indexadores (equip/rates): garantir contratos ao trocar JSON.
 
 Casos de borda:
