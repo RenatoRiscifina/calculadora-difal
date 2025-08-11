@@ -21,13 +21,15 @@
         />
         <div class="app-header__title">
           <strong>Calculadora DIFAL</strong>
-          <span> Origem MG </span>
+          <span>Origem MG</span>
         </div>
       </div>
     </header>
 
     <!-- Conteúdo -->
     <main class="container">
+      <!-- (h1 removido, conforme solicitado) -->
+
       <form id="form-difal" class="card" novalidate>
         <div class="field">
           <label for="equipamento">Equipamentos</label>
@@ -56,23 +58,22 @@
 
       <section id="resultado" class="result card" aria-live="polite">
         <h2>Resultados</h2>
-          <div class="result-row">
-           <span>Valor do Equipamento selecionado:</span>
-             <strong id="valorEquipamento">–</strong>
-      </div>
-       <div class="result-row">
-           <span>Valor DIFAL:</span>
-           <strong id="valorDifal">–</strong>
-       </div>
-       <div class="result-row">
-           <span>Valor Total (Equipamento + DIFAL):</span>
-           <strong id="valorTotal">–</strong>
-       </div>
-  </div>
-</section>
+        <div class="result-row">
+          <span>Valor do equipamento (selecionado):</span>
+          <strong id="valorEquipamento">–</strong>
+        </div>
+        <div class="result-row">
+          <span>Valor DIFAL:</span>
+          <strong id="valorDifal">–</strong>
+        </div>
+        <div class="result-row">
+          <span>Valor total (Equipamento + DIFAL):</span>
+          <strong id="valorTotal">–</strong>
+        </div>
+      </section>
+    </main>
 
-
-    <!-- Script principal (origem fixa MG; busca JSONs no mesmo nível do index) -->
+    <!-- Script principal -->
     <script src="js/app.js" defer></script>
   </body>
 </html>
