@@ -84,7 +84,7 @@
 
   const outVista = document.getElementById("valorEquipamento");
   const outDifal = document.getElementById("valorDifal");
-  const outTotal = document.getElementById("valorTotal");
+  // const outTotal = document.getElementById("valorTotal");
   const nota     = document.getElementById("notaOperacao");
   const erro     = document.getElementById("erro");
 
@@ -115,7 +115,7 @@
   function resetResultados(){
     if(outVista) outVista.textContent = "–";
     if(outDifal) outDifal.textContent = "–";
-    if(outTotal) outTotal.textContent = "–";
+    // if(outTotal) outTotal.textContent = "–";
     if(rEntrada10)    rEntrada10.textContent = "–";
     if(rCartao)       rCartao.textContent = "–";
     if(rMargem)       rMargem.textContent = "–";
@@ -197,7 +197,7 @@
     if (String(ufDestino).toUpperCase() === ORIGEM_UF) {
       setNota("Operação interna (MG→MG): DIFAL não se aplica.");
       outDifal.textContent = BRL.format(0);
-      outTotal.textContent = BRL.format(vista);
+     //  outTotal.textContent = BRL.format(vista);
       return;
     }
     const a = Rates.getAliquotas(ORIGEM_UF, ufDestino);
@@ -219,7 +219,7 @@
 
     const difalRound = Math.round(difal * 100) / 100;
     outDifal.textContent = BRL.format(difalRound);
-    outTotal.textContent = BRL.format(vista + difalRound);
+    // outTotal.textContent = BRL.format(vista + difalRound);
   }
 
   if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
