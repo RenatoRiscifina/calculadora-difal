@@ -1,131 +1,66 @@
 /**
- * Calculadora DIFAL — app.js
- * Preços: Google Apps Script (JSON) — URL /exec abaixo
- * Alíquotas: data/difal-rates.json
- * Regras: cálculo "por dentro", usa alíquota de importados quando houver, MG→MG = DIFAL 0 + nota
- * Extras: "Entrada" NÃO é forma de pagamento; exibimos como campo informativo nos resultados
- *         Filtra equipamentos-cabeçalho e sem valores (1, ESTÉTICA, CONSTRUÇÃO, FITNESS, FOOD)
+ * Calculadora DIFAL — valor à vista digitável (sem planilha, PMT nas parcelas)
+ * - Equipamento: apenas referência (lista local)
+ * - UF destino: mantém DIFAL (origem MG)
+ * - Infos extras: Entrada 10%, Cartão/Plataf. (×1,1111), Margem 3%, Menor entrada (×0,96 sobre a de 10%)
+ * - Balões 10/15/20/25%: entrada = % do à vista; parcelas via PMT (5% a.m.) para 36x e 48x
+ * - Filtra linhas de seção: 1, ESTÉTICA, CONSTRUÇÃO, FITNESS, FOOD
  */
 
 (function () {
   "use strict";
 
-  // === Config ===
-  const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbyWkHpO41Lw1RHgABygPoMWJoE3ezt0M5R3Zcyhf46pQBprU-gHWa9H3PacgijSoWyW/exec";
+  const EQUIP_LIST_URL = "data/equipamentos.json";
   const RATES_URL = "data/difal-rates.json";
-  const ORIGEM_UF = "MG"; // fixo
+  const ORIGEM_UF = "MG";
+  const EQUIP_BLACKLIST = new Set(["1","ESTÉTICA","CONSTRUÇÃO","FITNESS","FOOD"]);
 
-  // Equipamentos a excluir do select (linhas de seção/cabeçalho)
-  const EQUIP_BLACKLIST = new Set(["1", "ESTÉTICA", "CONSTRUÇÃO", "FITNESS", "FOOD"]);
+  // >>> taxa de financiamento (mês) usada no PMT
+  const FIN_RATE = 0.05; // 5% a.m.
 
-  // === Utils ===
+  // ===== Utils =====
   const BRL = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
-  const pct = (v) => (v > 1 ? v / 100 : v); // 18 -> 0.18; 0.18 mantém
+  const pct = (v) => (v > 1 ? v / 100 : v);
+  const toNumberLike = (n) => {
+    if (typeof n === "number") return n;
+    const s = String(n ?? "").trim(); if (!s) return NaN;
+    return Number(s.replace(/R\$\s*/i,"").replace(/\./g,"").replace(",","."));
+  };
+  const parsePrecoInput = (el) => toNumberLike(el?.value);
 
-  function withOrigin(url) {
-    const hasQ = url.includes("?");
-    return url + (hasQ ? "&" : "?") + "origin=" + encodeURIComponent(location.origin);
+  // PMT básico (fv=0, type=0): parcela positiva
+  function pmt(rate, nper, pv) {
+    if (!isFinite(rate) || !isFinite(nper) || !isFinite(pv) || nper <= 0) return NaN;
+    if (rate === 0) return pv / nper;
+    return (pv * rate) / (1 - Math.pow(1 + rate, -nper));
   }
 
-  async function fetchJSON(url, { strictJson = false } = {}) {
+  async function fetchJSON(url) {
     const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status} ao carregar ${url}`);
-    if (strictJson) {
-      const ct = (res.headers.get("content-type") || "").toLowerCase();
-      if (!ct.includes("application/json")) {
-        const txt = await res.text().catch(() => "");
-        throw new Error(`Conteúdo não-JSON em ${url}. Trecho: ${String(txt).slice(0, 200)}`);
-      }
-    }
+    if (!res.ok) throw new Error(`HTTP ${res.status} em ${url}`);
     return res.json();
   }
 
-  function toNumberLike(n) {
-    if (typeof n === "number") return n;
-    if (n == null) return NaN;
-    const s = String(n).trim();
-    if (!s) return NaN;
-    const norm = s.replace(/R\$\s*/i, "").replace(/\./g, "").replace(",", ".");
-    const v = Number(norm);
-    return Number.isFinite(v) ? v : NaN;
-  }
-
-  // === Indexadores ===
-  // Recebe items do Apps Script: [{ equipamento, forma_pagamento, valor }]
-  // Guarda "Entrada" separada (ref.entrada) e não inclui nas formas selecionáveis
-  function indexEquip(equipList) {
-    const byEquip = new Map();
-
-    for (const row of equipList) {
-      const equipRaw = row?.equipamento ?? "";
-      const equip = String(equipRaw).trim();
-      if (!equip) continue;
-
-      // pula cabeçalhos/linhas-seção
-      if (EQUIP_BLACKLIST.has(equip.toUpperCase())) continue;
-
-      const formaRaw = row?.forma_pagamento ?? "";
-      const forma = String(formaRaw).trim();
-      const valor = toNumberLike(row?.valor);
-
-      if (!byEquip.has(equip)) byEquip.set(equip, { formas: new Set(), precos: {}, entrada: NaN });
-
-      const ref = byEquip.get(equip);
-
-      // Entrada: guarda separado e NÃO adiciona às formas
-      if (/^entrada$/i.test(forma)) {
-        if (Number.isFinite(valor)) ref.entrada = valor;
-        continue;
-      }
-
-      // Outras formas válidas
-      if (!forma || !Number.isFinite(valor)) continue;
-      ref.formas.add(forma);
-      ref.precos[forma] = valor;
+  function normalizeEquipList(data) {
+    const arr = Array.isArray(data) ? data : (Array.isArray(data?.equipamentos) ? data.equipamentos : []);
+    const nomes = new Set();
+    for (const raw of arr) {
+      const nome = String(raw ?? "").trim();
+      if (!nome) continue;
+      if (EQUIP_BLACKLIST.has(nome.toUpperCase())) continue;
+      nomes.add(nome);
     }
-
-    // Apenas equipamentos com pelo menos uma forma de pagamento válida (sem contar "Entrada")
-    const equipamentos = Array.from(byEquip.entries())
-      .filter(([, ref]) => ref.formas.size > 0)
-      .map(([nome]) => nome)
-      .sort((a, b) => a.localeCompare(b, "pt-BR"));
-
-    // ordem desejada (sem "Entrada")
-    const ordemFormas = [
-      "Valor à Vista",
-      "Financiado (12x)",
-      "Financiado (24x)",
-      "Financiado (36x)",
-      "Financiado (48x)",
-    ];
-
-    function getEquipamentos() { return equipamentos; }
-    function getFormas(equip) {
-      const ref = byEquip.get(equip); if (!ref) return [];
-      const atuais = Array.from(ref.formas);
-      const rank = (f) => { const i = ordemFormas.indexOf(f); return i === -1 ? 999 + atuais.indexOf(f) : i; };
-      return atuais.sort((a, b) => rank(a) - rank(b));
-    }
-    function getPreco(equip, forma) {
-      const v = byEquip.get(equip)?.precos?.[forma];
-      return Number.isFinite(v) ? v : NaN;
-    }
-    function getEntrada(equip) {
-      const v = byEquip.get(equip)?.entrada;
-      return Number.isFinite(v) ? v : NaN;
-    }
-
-    return { getEquipamentos, getFormas, getPreco, getEntrada };
+    return Array.from(nomes).sort((a,b)=>a.localeCompare(b,"pt-BR"));
   }
 
   function indexRates(rateList) {
     const byPair = new Map();
     const ufsDestino = new Set();
     for (const r of rateList) {
-      const o = String(r.uf_origem || "").toUpperCase();
-      const d = String(r.uf_destino || "").toUpperCase();
+      const o = String(r.uf_origem||"").toUpperCase();
+      const d = String(r.uf_destino||"").toUpperCase();
       if (!o || !d) continue;
-      if (o !== ORIGEM_UF) continue; // só MG
+      if (o !== ORIGEM_UF) continue;
       ufsDestino.add(d);
       byPair.set(`${o}|${d}`, {
         interna: pct(toNumberLike(r.aliquota_interna_destino)),
@@ -133,153 +68,161 @@
         importados: pct(toNumberLike(r.aliquota_inter_importados)),
       });
     }
-    // Garante MG no select, mesmo sem linha MG|MG
     ufsDestino.add(ORIGEM_UF);
-
-    function getUFsDestino() { return Array.from(ufsDestino).sort(); }
-    function getAliquotas(origem, destino) {
-      return byPair.get(`${String(origem).toUpperCase()}|${String(destino).toUpperCase()}`) || null;
-    }
-    return { getUFsDestino, getAliquotas };
+    return {
+      getUFsDestino: () => Array.from(ufsDestino).sort(),
+      getAliquotas: (origem, destino) => byPair.get(`${String(origem).toUpperCase()}|${String(destino).toUpperCase()}`) || null
+    };
   }
 
-  // === DOM ===
+  // ===== DOM =====
   const selEquip = document.getElementById("equipamento");
-  const selForma = document.getElementById("formaPagamento");
-  const selUF = document.getElementById("ufDestino");
-  const form = document.getElementById("form-difal");
-  const btn = document.getElementById("btnCalcular");
-  const outBase = document.getElementById("valorEquipamento");
-  const outEntrada = document.getElementById("valorEntrada");
+  const selUF    = document.getElementById("ufDestino");
+  const form     = document.getElementById("form-difal");
+  const btn      = document.getElementById("btnCalcular");
+  const precoEl  = document.getElementById("precoInformado");
+
+  const outVista = document.getElementById("valorEquipamento");
   const outDifal = document.getElementById("valorDifal");
   const outTotal = document.getElementById("valorTotal");
-  const erro = document.getElementById("erro");
-  const nota = document.getElementById("notaOperacao");
+  const nota     = document.getElementById("notaOperacao");
+  const erro     = document.getElementById("erro");
 
-  function setErro(msg) { if (erro) erro.textContent = msg || ""; }
-  function setNota(msg) { if (nota) nota.textContent = msg || ""; }
+  const rEntrada10     = document.getElementById("rEntrada10");
+  const rCartao        = document.getElementById("rCartao");
+  const rMargem        = document.getElementById("rMargem");
+  const rMenorEntrada  = document.getElementById("rMenorEntrada");
 
-  function clearChildren(el) { while (el && el.firstChild) el.removeChild(el.firstChild); }
-  function setPlaceholder(selectEl, texto) {
-    clearChildren(selectEl);
+  const idsBaloes = {
+    10: { ent: "b10Entrada", p36: "b10P36", p48: "b10P48" },
+    15: { ent: "b15Entrada", p36: "b15P36", p48: "b15P48" },
+    20: { ent: "b20Entrada", p36: "b20P36", p48: "b20P48" },
+    25: { ent: "b25Entrada", p36: "b25P36", p48: "b25P48" },
+  };
+  const get = (id)=>document.getElementById(id);
+
+  function setErro(msg){ if(erro) erro.textContent = msg||""; }
+  function setNota(msg){ if(nota) nota.textContent = msg||""; }
+  function preencherSelect(select, items, placeholder){
+    select.innerHTML = "";
     const opt = document.createElement("option");
-    opt.value = ""; opt.textContent = texto; opt.disabled = true; opt.selected = true;
-    selectEl.appendChild(opt);
-  }
-  function preencherSelect(select, items, placeholder) {
-    setPlaceholder(select, placeholder);
-    for (const it of items) {
-      const opt = document.createElement("option");
-      opt.value = it; opt.textContent = it;
-      select.appendChild(opt);
+    opt.value=""; opt.textContent = placeholder; opt.disabled = true; opt.selected = true;
+    select.appendChild(opt);
+    for(const v of items){
+      const o=document.createElement("option"); o.value=v; o.textContent=v; select.appendChild(o);
     }
   }
-  function resetResultados() {
-    if (outDifal) outDifal.textContent = "–";
-    if (outTotal) outTotal.textContent = "–";
+  function resetResultados(){
+    if(outVista) outVista.textContent = "–";
+    if(outDifal) outDifal.textContent = "–";
+    if(outTotal) outTotal.textContent = "–";
+    if(rEntrada10)    rEntrada10.textContent = "–";
+    if(rCartao)       rCartao.textContent = "–";
+    if(rMargem)       rMargem.textContent = "–";
+    if(rMenorEntrada) rMenorEntrada.textContent = "–";
+    for (const k of Object.keys(idsBaloes)){
+      const m = idsBaloes[k];
+      get(m.ent).textContent = "–";
+      get(m.p36).textContent = "–";
+      get(m.p48).textContent = "–";
+    }
     setNota("");
   }
 
-  // === Boot ===
-  let Equip = null, Rates = null;
+  // ===== Estado =====
+  let Rates = null;
 
-  async function init() {
-    try {
-      // Preços (Apps Script) + Alíquotas locais
-      const [equipRaw, ratesRaw] = await Promise.all([
-        fetchJSON(withOrigin(SHEET_API_URL), { strictJson: true }),
-        fetchJSON(RATES_URL, { strictJson: false }),
+  async function init(){
+    try{
+      const [equipData, ratesRaw] = await Promise.all([
+        fetchJSON(EQUIP_LIST_URL),
+        fetchJSON(RATES_URL),
       ]);
 
-      Equip = indexEquip(equipRaw.items ? equipRaw.items : equipRaw);
+      const nomes = normalizeEquipList(equipData);
       Rates = indexRates(ratesRaw);
 
-      preencherSelect(selEquip, Equip.getEquipamentos(), "Selecione o equipamento");
+      preencherSelect(selEquip, nomes, "Selecione o equipamento");
       preencherSelect(selUF, Rates.getUFsDestino(), "Selecione a UF de destino");
 
-      selEquip.addEventListener("change", () => {
-        const eq = selEquip.value;
+      selEquip.addEventListener("change", () => { resetResultados(); setErro(""); });
 
-        // Preenche formas (sem "Entrada")
-        preencherSelect(selForma, Equip.getFormas(eq), "Selecione a forma de pagamento");
-
-        // Atualiza valor de ENTRADA imediatamente ao escolher o equipamento
-        const entrada = Equip.getEntrada(eq);
-        if (outEntrada) outEntrada.textContent = Number.isFinite(entrada) ? BRL.format(entrada) : "–";
-
-        // Limpa base/DIFAL/Total até escolher a forma
-        if (outBase) outBase.textContent = "–";
-        resetResultados();
-        setErro("");
-      });
-
-      selForma.addEventListener("change", () => {
-        const eq = selEquip.value, f = selForma.value;
-        const base = Equip.getPreco(eq, f);
-        if (outBase) outBase.textContent = Number.isFinite(base) ? BRL.format(base) : "–";
-        resetResultados();
-        setErro("");
-      });
-
-      form.addEventListener("submit", (ev) => {
+      form.addEventListener("submit", (ev)=>{
         ev.preventDefault();
         calcular();
       });
-    } catch (e) {
+    }catch(e){
       console.error(e);
-      setErro("Erro ao carregar dados. Verifique o Web App do Sheets e o arquivo 'data/difal-rates.json'.");
-      if (btn) btn.disabled = true;
+      setErro("Falha ao carregar dados iniciais. Verifique 'data/equipamentos.json' e 'data/difal-rates.json'.");
+      if(btn) btn.disabled = true;
     }
   }
 
-  // === Cálculo (por dentro + importados + MG→MG = 0) ===
-  function calcular() {
+  function calcular(){
     setErro(""); setNota("");
 
     const equip = selEquip.value;
-    const forma = selForma.value;
     const ufDestino = selUF.value;
+    const vista = parsePrecoInput(precoEl);
 
-    if (!equip || !forma || !ufDestino) { setErro("Preencha todos os campos para calcular."); return; }
+    if(!equip || !ufDestino){ setErro("Selecione o equipamento e a UF de destino."); return; }
+    if(!Number.isFinite(vista) || vista <= 0){ setErro("Informe um valor à vista válido."); precoEl?.focus(); return; }
 
-    const preco = Equip.getPreco(equip, forma);
-    if (!Number.isFinite(preco)) { setErro("Preço não encontrado para a combinação selecionada."); return; }
-    if (outBase) outBase.textContent = BRL.format(preco);
+    if(outVista) outVista.textContent = BRL.format(vista);
 
-    // Caso interno MG→MG: DIFAL não se aplica
+    // ===== Infos básicas
+    const entrada10 = vista * 0.20;
+    const cartao    = vista * 1.1111;
+    const margem    = vista * 0.03;
+    const menorEnt  = entrada10 * 0.96;
+
+    rEntrada10.textContent = BRL.format(entrada10);
+    rCartao.textContent    = BRL.format(cartao);
+    rMargem.textContent    = BRL.format(margem);
+    rMenorEntrada.textContent = BRL.format(menorEnt);
+
+    // ===== Balões com PMT (5% a.m.) =====
+    for (const p of [10,15,20,25]) {
+      const entrada = vista * (p/100);
+      const saldo = Math.max(vista - entrada, 0);
+      const parcela36 = pmt(FIN_RATE, 36, saldo);
+      const parcela48 = pmt(FIN_RATE, 48, saldo);
+
+      get(idsBaloes[p].ent).textContent = BRL.format(entrada);
+      get(idsBaloes[p].p36).textContent = BRL.format(parcela36);
+      get(idsBaloes[p].p48).textContent = BRL.format(parcela48);
+    }
+
+    // ===== DIFAL =====
     if (String(ufDestino).toUpperCase() === ORIGEM_UF) {
       setNota("Operação interna (MG→MG): DIFAL não se aplica.");
-      if (outDifal) outDifal.textContent = BRL.format(0);
-      if (outTotal) outTotal.textContent = BRL.format(preco);
+      outDifal.textContent = BRL.format(0);
+      outTotal.textContent = BRL.format(vista);
       return;
     }
-
     const a = Rates.getAliquotas(ORIGEM_UF, ufDestino);
-    if (!a) { setErro("Alíquotas não encontradas para a UF selecionada."); return; }
-
+    if(!a){ setErro("Alíquotas não encontradas para a UF selecionada."); return; }
     const aliqInterAplicada = Number.isFinite(a.importados) ? a.importados : a.interes;
-    if (!Number.isFinite(a.interna) || !Number.isFinite(aliqInterAplicada)) {
-      setErro("Valores de alíquotas inválidos para a UF selecionada."); return;
+    if(!Number.isFinite(a.interna) || !Number.isFinite(aliqInterAplicada)){
+      setErro("Alíquotas inválidas."); return;
     }
 
-    const denom = 1 - a.interna; // sem FCP; se houver, seria (1 - interna - fcp)
-    if (denom <= 0) { setErro("Alíquota interna inválida (resultou em base negativa)."); return; }
+    const denom = 1 - a.interna;
+    if(denom <= 0){ setErro("Alíquota interna inválida."); return; }
 
-    const icmsOrigem = preco * aliqInterAplicada;
-    const baseDestino = (preco - icmsOrigem) / denom;
+    const icmsOrigem  = vista * aliqInterAplicada;
+    const baseDestino = (vista - icmsOrigem) / denom;
     const icmsDestino = baseDestino * a.interna;
 
     let difal = icmsDestino - icmsOrigem;
     if (difal < 0) difal = 0;
 
     const difalRound = Math.round(difal * 100) / 100;
-    const total = preco + difalRound;
-
-    if (outDifal) outDifal.textContent = BRL.format(difalRound);
-    if (outTotal) outTotal.textContent = BRL.format(total);
+    outDifal.textContent = BRL.format(difalRound);
+    outTotal.textContent = BRL.format(vista + difalRound);
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 
 })();

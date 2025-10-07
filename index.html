@@ -1,85 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Calculadora DIFAL · Blips</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Header com logo -->
-    <header class="app-header">
-      <div class="app-header__inner">
-        <img
-          class="app-header__logo"
-          src="img/blips-logo.png"
-          alt="Blips"
-          width="140"
-          height="48"
-          decoding="async"
-          loading="eager"
-        />
-        <div class="app-header__title">
-          <strong>Calculadora DIFAL</strong>
-          <span>Origem MG</span>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calculadora DIFAL</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <!-- coloque seu logo em img/logo.png se quiser -->
+        <!-- <img src="img/logo.png" alt="Logo" class="logo"> -->
+        <span class="title">Calculadora DIFAL</span>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Conteúdo -->
-    <main class="container">
-      <!-- (h1 removido, conforme solicitado) -->
+  <main class="wrap">
+    <section class="card">
+      <h2>Parâmetros</h2>
+      <form id="form-difal" novalidate>
+        <div class="grid-2">
+          <div class="field">
+            <label for="equipamento">Equipamento</label>
+            <select id="equipamento" required></select>
+          </div>
 
-      <form id="form-difal" class="card" novalidate>
-        <div class="field">
-          <label for="equipamento">Equipamentos</label>
-          <select id="equipamento" required>
-            <option value="" disabled selected>Selecione o equipamento</option>
-          </select>
+          <div class="field">
+            <label for="ufDestino">UF Destino</label>
+            <select id="ufDestino" required></select>
+          </div>
         </div>
 
         <div class="field">
-          <label for="formaPagamento">Forma de Pagamento</label>
-          <select id="formaPagamento" required>
-            <option value="" disabled selected>Selecione a forma de pagamento</option>
-          </select>
+          <label for="precoInformado">Valor à vista (R$)</label>
+          <input id="precoInformado" type="text" inputmode="decimal" placeholder="Ex.: 12.345,67" required>
         </div>
 
-        <div class="field">
-          <label for="ufDestino">UF Destino</label>
-          <select id="ufDestino" required>
-            <option value="" disabled selected>Selecione a UF de destino</option>
-          </select>
-        </div>
-
-        <button id="btnCalcular" type="submit" class="btn">Calcular DIFAL</button>
         <div id="erro" class="error" aria-live="polite"></div>
+
+        <div class="actions">
+          <button id="btnCalcular" class="btn" type="submit">Calcular</button>
+        </div>
       </form>
+    </section>
 
-      <section id="resultado" class="result card" aria-live="polite">
-  <h2>Resultados</h2>
-  <div id="notaOperacao" class="note" aria-live="polite" style="margin-bottom:8px;"></div>
+    <section id="resultado" class="card" aria-live="polite">
+      <h2>Resultados</h2>
+      <div id="notaOperacao" class="note" style="margin-bottom:8px;"></div>
 
-  <div class="result-row">
-    <span>Valor do Equipamento Selecionado:</span>
-    <strong id="valorEquipamento">–</strong>
-  </div>
+      <div class="result-row">
+        <span>Valor à vista:</span>
+        <strong id="valorEquipamento">–</strong>
+      </div>
 
-  <div class="result-row">
-    <span>Valor de entrada (padrão):</span>
-    <strong id="valorEntrada">–</strong>
-  </div>
+      <div class="result-row">
+        <span>Valor de entrada:</span>
+        <strong id="rEntrada10">–</strong>
+      </div>
 
-  <div class="result-row">
-    <span>Valor DIFAL:</span>
-    <strong id="valorDifal">–</strong>
-  </div>
-  <div class="result-row">
-    <span>Valor Total (Equipamento + DIFAL):</span>
-    <strong id="valorTotal">–</strong>
-  </div>
-</section>
-    <!-- Script principal -->
-    <script src="js/app.js" defer></script>
-  </body>
+      <div class="result-row">
+        <span>Cartão / Plataf.:</span>
+        <strong id="rCartao">–</strong>
+      </div>
+
+      <div class="result-row">
+        <span>Margem desc. Prod./Frete:</span>
+        <strong id="rMargem">–</strong>
+      </div>
+
+      <div class="result-row">
+        <span>Menor entrada possível:</span>
+        <strong id="rMenorEntrada">–</strong>
+      </div>
+
+      <hr class="sep">
+
+      <div class="baloes">
+        <section class="balloon card-soft">
+          <h3>Balão 10%</h3>
+          <div class="result-row"><span>Entrada:</span><strong id="b10Entrada">–</strong></div>
+          <div class="result-row"><span>Parcela 36x:</span><strong id="b10P36">–</strong></div>
+          <div class="result-row"><span>Parcela 48x:</span><strong id="b10P48">–</strong></div>
+        </section>
+
+        <section class="balloon card-soft">
+          <h3>Balão 15%</h3>
+          <div class="result-row"><span>Entrada:</span><strong id="b15Entrada">–</strong></div>
+          <div class="result-row"><span>Parcela 36x:</span><strong id="b15P36">–</strong></div>
+          <div class="result-row"><span>Parcela 48x:</span><strong id="b15P48">–</strong></div>
+        </section>
+
+        <section class="balloon card-soft">
+          <h3>Balão 20%</h3>
+          <div class="result-row"><span>Entrada:</span><strong id="b20Entrada">–</strong></div>
+          <div class="result-row"><span>Parcela 36x:</span><strong id="b20P36">–</strong></div>
+          <div class="result-row"><span>Parcela 48x:</span><strong id="b20P48">–</strong></div>
+        </section>
+
+        <section class="balloon card-soft">
+          <h3>Balão 25%</h3>
+          <div class="result-row"><span>Entrada:</span><strong id="b25Entrada">–</strong></div>
+          <div class="result-row"><span>Parcela 36x:</span><strong id="b25P36">–</strong></div>
+          <div class="result-row"><span>Parcela 48x:</span><strong id="b25P48">–</strong></div>
+        </section>
+      </div>
+
+      <hr class="sep">
+
+      <div class="result-row">
+        <span>Valor DIFAL:</span>
+        <strong id="valorDifal">–</strong>
+      </div>
+      <div class="result-row">
+        <span>Valor total (à vista + DIFAL):</span>
+        <strong id="valorTotal">–</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <small>Origem: MG • Cálculo por dentro • Alíquota de importados quando aplicável</small>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
 </html>
