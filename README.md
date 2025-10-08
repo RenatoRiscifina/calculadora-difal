@@ -1,195 +1,143 @@
-## Calculadora DIFAL · Blips
-
-Aplicação web (HTML/CSS/JS) para cálculo de DIFAL com origem fixa em MG, usando duas bases JSON:
-
-data/valores-equipamentos.json: preços por equipamento × forma de pagamento
-
-data/difal-rates.json: alíquotas por UF de destino (interna, interestadual e interestadual para importados)
-
-Interface com paleta amarelo / preto / branco, alto contraste e foco em acessibilidade.
-
-## Objetivo do projeto
-
-Entregar uma calculadora simples e confiável de DIFAL para produtos importados, que:
-
-carregue dados estáticos (preços e alíquotas) via JSON,
-
-ofereça uma UI direta (3 campos + 3 resultados),
-
-aplique a fórmula “por dentro” com a interestadual de importados quando existir.
-
-## Funcionalidades
-
-1. Campos:
-
-Equipamentos
-
-Forma de Pagamento
-
-UF Destino
-
-2. Resultados:
-
-Valor do equipamento (selecionado)
-
-Valor DIFAL
-
-Valor total (Equipamento + DIFAL)
-
-Origem sempre MG.
-
-3. Para importados, usa aliquota_inter_importados; se ausente, cai para a aliquota_interestadual.
-
-Formatação BRL com Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).
-
-UI responsiva, com foco visível e contraste alto.
-
-## Publicar no GitHub Pages
-
-1. Commit/push na branch main.
-
-2. Settings → Pages → Deploy from a branch.
-
-3. Selecione main e a pasta /root.
-
-4. Aguarde o deploy e acesse a URL do Pages.
-
-Como os caminhos de fetch() são relativos ao index.html (data/...), não há configurações extras.
-
-## Processo de construção (passo a passo)
-
-1. Definição do contrato de dados
-
-Preços separados por equipamento × forma de pagamento.
-
-Alíquotas por par UF (origem MG) → UF destino, com campos aliquota_interna_destino, aliquota_interestadual, aliquota_inter_importados.
-
-2. Indexação em memória
-
-Equipamentos: mapeamos equip → {formas, preços} para buscar rápido as formas e o valor.
-
-Alíquotas: mapeamos MG|UF → objeto com as alíquotas, e uma lista única de UFs de destino.
-
-3. UI e binding
-
-Preenchemos o select de equipamentos na carga.
-
-Ao escolher o equipamento, carregamos as formas de pagamento válidas.
-
-Preenchemos as UFs de destino a partir das alíquotas indexadas.
-
-Exibimos o valor do equipamento quando a forma é selecionada.
-
-4. Cálculo “por dentro” (gross-up) para importados
-
-ICMS_origem = Preço × ALQ_inter_aplicada
-(ALQ_inter_aplicada = aliquota_inter_importados se existir; senão, aliquota_interestadual)
-
-Base_destino = (Preço − ICMS_origem) / (1 − ALQ_interna)
-
-ICMS_destino = Base_destino × ALQ_interna
-
-DIFAL = ICMS_destino − ICMS_origem (se negativo, zera)
-
-Total = Preço + DIFAL
-
-5. Qualidade e UX
-
-Placeholders corretos, campos required, mensagens de erro claras.
-
-Arredondamento apenas no final (2 casas) para evitar ruído de ponto flutuante.
-
-Acessibilidade: aria-live nos resultados, foco visível, contraste alto.
-
-CSS com design tokens (variáveis CSS) e componentes simples (cards, botões, listas).
-
-## Técnicas e tecnologias usadas
-
-1. Vanilla JS (sem framework):
-
-fetch com cache: "no-store" para evitar cache “duro” no Pages.
-
-Indexação com Map, Set e funções utilitárias puras.
-
-2. Formatação e parsing:
-
-Normalização numérica tolerante (18 ↔ 0.18 ↔ “18%”), sem dependências externas.
-
-3. Acessibilidade/UX:
-
-aria-live nos resultados, foco visível (:focus-visible), semântica básica.
-
-4. CSS moderno:
-
-Variáveis CSS (tema), sombras, responsividade, redução de movimento (prefers-reduced-motion).
-
-5. Arquitetura simples e clara:
-
-Dados (/data) separados do código (/js) e estilos (/css).
-
-app.js dividido em Config, Utils, Indexadores, Binding, Cálculo.
-
-## Detalhes do cálculo (exemplo)
-Preço (após selecionar equipamento + forma): R$ 24.000,00
-
-Alíquota interna (destino): 18%
-
-Interestadual importados: 4%
-
-ICMS_origem = 24.000 × 0,04 = 960,00
-
-Base_destino = (24.000 − 960) / (1 − 0,18) = 23.040 / 0,82
-
-ICMS_destino = Base_destino × 0,18
-
-DIFAL = ICMS_destino − 960,00
-
-Total = Preço + DIFAL
-
-## Decisões de design
-
-Dados fora do código: facilita atualização sem redeploy de JS/CSS.
-
-Indexação: performance e simplicidade (lookups O(1)).
-
-Cálculo isolado: fácil de trocar ou expandir (ex.: incluir FCP).
-
-Sem dependências: zero build; ideal para GitHub Pages e manutenção rápida.
-
-Tema consistente: tokens CSS e componentes reutilizáveis.
-
-## Boas práticas adotadas
-
-Código segmentado por responsabilidade (utils, indexação, cálculo).
-
-Nomes autoexplicativos e comentários concisos.
-
-Placeholders e required nos campos, validações de entrada e mensagens de erro.
-
-Arredondamento apenas no fim do fluxo de cálculo.
-
-Caminhos relativos estáveis para publicar em qualquer domínio (Pages).
-
-## Testes e validação (sugestão)
-
-Unitários dos indexadores (equip/rates): garantir contratos ao trocar JSON.
-
-Casos de borda:
-
-Alíquota interna igual/menor que a interestadual (DIFAL = 0).
-
-Ausência de aliquota_inter_importados (fallback para aliquota_interestadual).
-
-Valores de preço inválidos ou strings com pontuação/BRL.
-
-Comparação com planilhas: validar 3–5 cenários por UF.
-
-## Contribuindo
-
-1. Faça um fork.
-
-2. Crie uma branch: git checkout -b feat/minha-feature.
-
-3. Commits no padrão: feat: …, fix: …, docs: ….
-
-4. git push e abra um PR.
+# Calculadora DIFAL (MG → UF destino)
+
+Ferramenta leve (HTML/CSS/JS) para simular **DIFAL por dentro** e apoiar o comercial com **entradas e parcelamentos**. Publicado em GitHub Pages, sem dependências de build.
+
+---
+
+## ✨ O que a ferramenta faz
+- **Entrada manual do “Valor à vista”** (evita divergências de planilha).
+- **Cálculo do DIFAL por dentro**, considerando **alíquota de importados** quando houver.
+- **MG → MG**: exibe nota e **DIFAL = 0**.
+- **Cálculos adicionais**:
+  - **Entrada 10%**
+  - **Cartão/Plataforma**: `valor × 1,1111`
+  - **Margem desconto Produto/Frete**: `3%`
+  - **Menor entrada possível**: `entrada10 × 0,96`
+- **Balões** 10%, 15%, 20%, 25%:
+  - Entrada = % do valor à vista
+  - Parcelas **36x** e **48x** via **PMT** (juros compostos **5% a.m.**) sobre o saldo.
+
+---
+
+## 🧮 Fórmulas principais
+
+- **DIFAL por dentro** (sem FCP):
+  - `ICMS_origem = PV × aliq_interestadual(ou importados)`
+  - `Base_destino = (PV − ICMS_origem) / (1 − aliq_interna_destino)`
+  - `ICMS_destino = Base_destino × aliq_interna_destino`
+  - `DIFAL = max(ICMS_destino − ICMS_origem, 0)`
+
+- **Balões (parcelas) – PMT**:
+  - `saldo = PV − entrada`
+  - `parcela = PMT(taxa=0,05; n=36|48; pv=saldo) = (pv×r) / (1−(1+r)^(−n))`
+
+> **Observação:** alíquotas podem vir como **18** ou **0.18** (o app normaliza).
+
+---
+
+## 🗂️ Estrutura
+
+```
+/
+├─ index.html
+├─ css/
+│  └─ styles.css
+├─ js/
+│  └─ app.js
+└─ data/
+   ├─ difal-rates.json      # alíquotas
+   └─ equipamentos.json     # nomes de equipamentos
+```
+
+### `data/equipamentos.json` (exemplo)
+```json
+{
+  "equipamentos": [
+    "Laser XYZ",
+    "Ultrassom ABC",
+    "Criolipólise 360",
+    "HIFU Pro",
+    "Radiofrequência Max"
+  ]
+}
+```
+
+> Linhas de seção são **filtradas** automaticamente: `1`, `ESTÉTICA`, `CONSTRUÇÃO`, `FITNESS`, `FOOD`.
+
+### `data/difal-rates.json` (exemplo mínimo)
+```json
+[
+  {
+    "uf_origem": "MG",
+    "uf_destino": "SP",
+    "aliquota_interna_destino": 18,
+    "aliquota_interestadual": 12,
+    "aliquota_inter_importados": 4
+  },
+  {
+    "uf_origem": "MG",
+    "uf_destino": "RJ",
+    "aliquota_interna_destino": 20,
+    "aliquota_interestadual": 12,
+    "aliquota_inter_importados": 4
+  }
+]
+```
+
+---
+
+## 🔧 Configurações rápidas
+Abra `js/app.js`:
+- **Taxa de financiamento (PMT)**: `const FIN_RATE = 0.05` // 5% a.m.
+- Percentuais dos **balões**: array `[10,15,20,25]` (ids mapeados).
+- **Blacklist** de equipamentos (linhas de seção): `EQUIP_BLACKLIST`.
+
+---
+
+## ▶️ Rodando localmente
+Requer apenas um servidor estático (para `fetch` funcionar):
+```bash
+python -m http.server 8080
+# ou
+npx serve -l 8080
+```
+Acesse: `http://localhost:8080`
+
+---
+
+## 🚀 Deploy (GitHub Pages)
+- **Settings → Pages** → *Deploy from a branch* → `main` / **root**.
+- Faça *cache bust* nos assets quando atualizar:
+  ```html
+  <link rel="stylesheet" href="css/styles.css?v=YYYYMMDDHH">
+  <script src="js/app.js?v=YYYYMMDDHH"></script>
+  ```
+
+---
+
+## 🧱 Tecnologias
+- **HTML/CSS/JS** puro (bundle mínimo)
+- **Intl.NumberFormat** para BRL
+- **A11y**: `aria-live` para resultados; validação leve
+
+---
+
+## ✅ Principais mudanças (changelog resumido)
+- **[Atual]** Entrada manual do valor à vista (removida dependência de planilha).
+- Removido campo **Forma de pagamento** e “Entrada” como opção.
+- Adicionados cálculos: **Cartão/Plataf. (×1,1111)**, **Margem 3%**, **Menor entrada (×0,96)**.
+- **Balões** com parcelas via **PMT 5% a.m.** (36x/48x).
+- Mantido DIFAL por dentro + alíquota de **importados** e regra **MG→MG = 0**.
+- Removido campo **“Valor total (à vista + DIFAL)”**.
+- UI refinada (paleta **amarelo/preto/branco**) e header bar.
+- Lista de equipamentos migrou para `data/equipamentos.json` e filtragem de seções.
+
+---
+
+## 📸 (Opcional) Screenshots
+Coloque imagens em `docs/` e referencie aqui.
+
+---
+
+## 📄 Licença
+MIT — ajuste conforme política da empresa.
