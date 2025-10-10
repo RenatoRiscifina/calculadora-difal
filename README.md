@@ -21,11 +21,11 @@ Ferramenta leve (HTML/CSS/JS) para simular **DIFAL por dentro** e apoiar o comer
 
 ## 🧮 Fórmulas principais
 
-- **DIFAL por dentro** (sem FCP):
+- **DIFAL por dentro**:
   - `ICMS_origem = PV × aliq_interestadual(ou importados)`
   - `Base_destino = (PV − ICMS_origem) / (1 − aliq_interna_destino)`
   - `ICMS_destino = Base_destino × aliq_interna_destino`
-  - `DIFAL = max(ICMS_destino − ICMS_origem, 0)`
+  - `DIFAL = (ICMS_destino − ICMS_origem)`
 
 - **Balões (parcelas) – PMT**:
   - `saldo = PV − entrada`
